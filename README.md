@@ -1,2 +1,2 @@
 # gwendalceltic
-PAgina no oficial del grupo de musica celta Gwendal
+Página no oficial del grupo de música celta Gwendal
