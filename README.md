@@ -1,4 +1,4 @@
-# GWENDAL · Web Oficial
+# GWENDAL · Web No Oficial
 ## Guía de instalación y personalización
 
 ---
@@ -9,6 +9,9 @@
 gwendal-web/
 │
 ├── index.html          ← Página principal
+├── privacidad.html     ← Política de Privacidad
+├── aviso-legal.html    ← Aviso Legal
+├── cookies.html        ← Política de Cookies
 ├── style.css           ← Estilos (paleta, tipografía, layout)
 ├── script.js           ← Interacciones y animaciones
 ├── README.md           ← Esta guía
@@ -43,7 +46,7 @@ gwendal-web/
 3. Ve a Settings → Pages
 4. En "Branch", selecciona `main` y carpeta `/ (root)`
 5. Haz clic en Save
-6. Tu web estará en: `https://tuusuario.github.io/gwendal/`
+6. Tu web estará en: `https://gwendal.es/`
 
 ---
 
@@ -139,8 +142,8 @@ En `index.html`, líneas iniciales:
 
 ```html
 <!-- Cambia por la URL real de tu GitHub Pages -->
-<link rel="canonical" href="https://tuusuario.github.io/gwendal/" />
-<meta property="og:url" content="https://tuusuario.github.io/gwendal/" />
+<link rel="canonical" href="https://gwendal.es/" />
+<meta property="og:url" content="https://gwendal.es/" />
 
 <!-- Añade una imagen real para redes sociales -->
 <meta property="og:image" content="assets/img/og-gwendal.jpg" />

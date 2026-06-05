@@ -1984,3 +1984,205 @@ textarea {
 .skip-link:focus {
   top: 0;
 }
+
+/* ─── LOGO SUTIL EN HERO ─────────────────────────────────────────────── */
+
+.hero-logo-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('assets/img/logo-gwendal.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70% auto;
+  opacity: 0.18;          /* más visible */
+  filter: blur(0.5px) sepia(100%) saturate(50%);  /* tono dorado */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ─── FORMACIÓN ACTUAL ──────────────────────────────────────── */
+
+.formacion {
+  background: var(--c-black);
+}
+
+.formacion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Tarjeta músico */
+.musico-card {
+  background: var(--c-dark-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.musico-card:hover {
+  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.musico-card.activo {
+  border-color: rgba(201,168,76,0.5);
+  box-shadow: var(--shadow-md), var(--shadow-gold);
+}
+
+/* Foto */
+.musico-foto-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.musico-foto-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.musico-card:hover .musico-foto-wrap img,
+.musico-card.activo .musico-foto-wrap img {
+  transform: scale(1.05);
+}
+
+/* Overlay con icono + */
+.musico-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(0,0,0,0.7) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.musico-card:hover .musico-overlay {
+  opacity: 1;
+}
+
+.musico-card.activo .musico-overlay {
+  opacity: 1;
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(201,168,76,0.2) 100%
+  );
+}
+
+.musico-overlay-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--c-gold);
+  color: var(--c-black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform var(--transition);
+}
+
+.musico-card.activo .musico-overlay-icon {
+  transform: rotate(45deg);
+  background: var(--c-gold-light);
+}
+
+/* Cabecera nombre e instrumento */
+.musico-header {
+  padding: 1.2rem 1.4rem 1rem;
+}
+
+.musico-nombre {
+  font-size: 1.05rem;
+  color: var(--c-white);
+  margin-bottom: 0.3rem;
+}
+
+.musico-instrumento {
+  font-family: var(--f-title);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+
+/* Biografía desplegable */
+.musico-bio {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.musico-card.activo .musico-bio {
+  max-height: 600px;
+}
+
+.musico-bio-inner {
+  padding: 0 1.4rem 1.4rem;
+  border-top: 1px solid rgba(201,168,76,0.15);
+  padding-top: 1.2rem;
+}
+
+.musico-bio-inner p {
+  font-size: 0.92rem;
+  color: var(--c-grey-light);
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.musico-bio-inner p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+/* Botón cerrar */
+.musico-cerrar {
+  font-family: var(--f-title);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  background: none;
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 2px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.musico-cerrar:hover {
+  background: rgba(201,168,76,0.1);
+  border-color: var(--c-gold);
+  color: var(--c-gold-light);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .formacion-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .formacion-grid {
+    grid-template-columns: 1fr;
+  }
+}

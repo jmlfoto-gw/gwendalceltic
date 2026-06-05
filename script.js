@@ -188,7 +188,6 @@ const initParallax = () => {
   }, { passive: true });
 };
 
-
 /* ─── FILTRO DISCOGRAFÍA ────────────────────────────────────── */
 
 const initDiscFilter = () => {
@@ -1194,10 +1193,73 @@ const initAccessibility = () => {
   document.body.prepend(skip);
 };
 
+/* ─── FORMACIÓN: tarjetas desplegables ──────────────────────── */
+
+const initFormacion = () => {
+  const cards = $$('.musico-card');
+  if (!cards.length) return;
+
+  cards.forEach(card => {
+    const bio    = card.querySelector('.musico-bio');
+    const cerrar = card.querySelector('.musico-cerrar');
+
+    // Clic en la tarjeta abre o cierra
+    card.addEventListener('click', (e) => {
+      // Si se clicó el botón cerrar, solo cierra
+      if (e.target === cerrar || cerrar.contains(e.target)) {
+        card.classList.remove('activo');
+        bio.setAttribute('aria-hidden', 'true');
+        return;
+      }
+
+      const estaActivo = card.classList.contains('activo');
+
+      // Cierra todas las demás
+      cards.forEach(c => {
+        c.classList.remove('activo');
+        c.querySelector('.musico-bio')
+         .setAttribute('aria-hidden', 'true');
+      });
+
+      // Abre esta si estaba cerrada
+      if (!estaActivo) {
+        card.classList.add('activo');
+        bio.setAttribute('aria-hidden', 'false');
+
+        // Scroll suave para que se vea bien en móvil
+        setTimeout(() => {
+          card.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest'
+          });
+        }, 300);
+      }
+    });
+
+    // Accesibilidad teclado
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-expanded', 'false');
+
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.click();
+        card.setAttribute(
+          'aria-expanded',
+          card.classList.contains('activo') ? 'true' : 'false'
+        );
+      }
+    });
+  });
+};
 
 /* ─── INIT: ARRANQUE PRINCIPAL ──────────────────────────────── */
 
 onReady(() => {
+  // Preloader (form,acion actual)
+  initFormacion();
+
   // Preloader (primero de todo)
   initPreloader();
 

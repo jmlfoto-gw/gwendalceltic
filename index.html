@@ -3,11 +3,15 @@
 <head>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PBCBSNM9');</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNSDRD43VN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XNSDRD43VN');
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8" />
@@ -15,24 +19,28 @@
 
   <!-- SEO Principal -->
   <title>Gwendal – Música Celta Bretona | Historia, Discografía y Libro Oficial</title>
-  <meta name="description" content="Web oficial de Gwendal, grupo pionero de música celta bretona. Descubre su historia, discografía y el nuevo libro sobre sus cincuenta años en escena." />
+  <meta name="description" content="Web no oficial de Gwendal, grupo pionero de música celta bretona. Descubre su historia, discografía y el nuevo libro sobre sus cincuenta años en escena." />
   <meta name="keywords" content="Gwendal, música celta, folk bretón, Bretaña, Celtic music, libro Gwendal, discografía Gwendal" />
   <meta name="author" content="Jose Morales · jmlfoto" />
-  <link rel="canonical" href="https://tuusuario.github.io/gwendal/" />
+  <link rel="canonical" href="https://gwendal.es/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Gwendal – Música Celta Bretona" />
   <meta property="og:description" content="Cincuenta años de música celta bretona. Historia, discografía y el libro oficial de Gwendal." />
-  <meta property="og:image" content="assets/img/og-gwendal.jpg" />
-  <meta property="og:url" content="https://tuusuario.github.io/gwendal/" />
+  <meta property="og:image" content="https://gwendal.es/assets/img/og-gwendal.jpg" />
+  <meta property="og:image" content="https://gwendal.es/assets/img/og-gwendal.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Imagen promocional de Gwendal, música celta bretona" />
+  <meta property="og:url" content="https://gwendal.es/" />
   <meta property="og:locale" content="es_ES" />
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Gwendal – Música Celta Bretona" />
   <meta name="twitter:description" content="Cincuenta años de música celta bretona. Historia, discografía y el libro oficial." />
-  <meta name="twitter:image" content="assets/img/og-gwendal.jpg" />
+  <meta name="twitter:image" content="https://gwendal.es/assets/img/og-gwendal.jpg" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -44,7 +52,7 @@
     "genre": ["Celtic music", "Folk", "Breton music"],
     "foundingDate": "1972",
     "foundingLocation": { "@type": "Place", "name": "Bretaña, Francia" },
-    "url": "https://tuusuario.github.io/gwendal/",
+    "url": "https://gwendal.es/",
     "sameAs": [
       "https://www.facebook.com/gwendal",
       "https://www.youtube.com/gwendal"
@@ -63,7 +71,7 @@
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCBSNM9"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-XNSDRD43VN"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
@@ -81,6 +89,7 @@
       </button>
       <ul class="nav-menu" id="nav-menu" role="list">
         <li><a href="#sobre" class="nav-link">Historia</a></li>
+        <li><a href="#formacion" class="nav-link">El Grupo</a></li>
         <li><a href="#discografia" class="nav-link">Discografía</a></li>
         <li><a href="#galeria" class="nav-link">Galería</a></li>
         <li><a href="#libro" class="nav-link">El Libro</a></li>
@@ -98,9 +107,12 @@
          HERO
     ============================================================ -->
     <section class="hero" id="inicio" aria-label="Presentación principal">
+
       <div class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="hero-texture"></div>
+        <!-- Logo de fondo sutil -->
+        <div class="hero-logo-bg" aria-hidden="true"></div>
       </div>
 
       <!-- Partículas decorativas -->
@@ -113,17 +125,21 @@
       </div>
 
       <div class="hero-content">
+
         <div class="hero-badge">
           <span>Música Celta · Bretagne · Desde 1972</span>
         </div>
+
         <h1 class="hero-title">
           <span class="hero-title-main">GWENDAL</span>
           <span class="hero-title-sub">50 años de música celta</span>
         </h1>
+
         <p class="hero-tagline">
           Más de cincuenta años haciendo vibrar Europa con la música ancestral de Bretaña.<br />
           Una historia de escenarios, viento, mar y alma celta.
         </p>
+
         <div class="hero-actions">
           <a href="#libro" class="btn btn-primary">
             <span class="btn-icon">◈</span>
@@ -134,6 +150,7 @@
             Descubrir su Historia
           </a>
         </div>
+
         <div class="hero-stats" aria-label="Datos del grupo">
           <div class="stat">
             <strong>50+</strong>
@@ -141,7 +158,7 @@
           </div>
           <div class="stat-divider" aria-hidden="true">·</div>
           <div class="stat">
-            <strong>20+</strong>
+            <strong>15+</strong>
             <span>álbumes</span>
           </div>
           <div class="stat-divider" aria-hidden="true">·</div>
@@ -149,21 +166,20 @@
             <strong>Millones</strong>
             <span>de seguidores</span>
           </div>
+        </div><!-- cierre hero-stats -->
 
-                <p class="sobre-autor-nota">
-                  Este sitio ha sido creado por Jose Morales · jmlfoto, fotógrafo de Gwendal
-                  durante la última década y autor del próximo libro sobre la historia del grupo.
-                  No es un sitio oficial de la banda.
-                </p>
+        <!-- Nota de autoría -->
+        <p class="hero-disclaimer">
+          Sitio web no oficial · Creado por José Morales, fotógrafo oficial y autor del libro
+        </p>
 
-        </div>
-      </div>
-
+      </div><!-- cierre hero-content -->
 
       <div class="hero-scroll" aria-hidden="true">
         <span class="scroll-line"></span>
         <span class="scroll-label">Scroll</span>
       </div>
+
     </section>
 
     <!-- ============================================================
@@ -219,11 +235,170 @@
               />
               </div>
               <div class="sobre-img-caption">
-                Gwendal en concierto · Bretagne, años 80
+                Gwendal en los iniscios del siglo XXI
               </div>
             </div>
           </div>
         </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+        FORMACIÓN ACTUAL
+    ============================================================ -->
+    <section class="section formacion" id="formacion" aria-labelledby="formacion-title">
+      <div class="section-container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">El Grupo</span>
+          <h2 class="section-title" id="formacion-title">Formación <em>Actual</em></h2>
+          <div class="section-ornament" aria-hidden="true">⸻</div>
+          <p class="section-subtitle">Haz clic en cada músico para conocer su historia</p>
+        </div>
+
+        <div class="formacion-grid">
+
+          <!-- Músico 1 -->
+          <article class="musico-card" data-musico="1">
+            <div class="musico-foto-wrap">
+              <img src="assets/img/musico-youenn.jpg"
+                  alt="Youenn Le Berre"
+                  loading="lazy" />
+              <div class="musico-overlay">
+                <span class="musico-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="musico-header">
+              <h3 class="musico-nombre">Youenn Le Berre</h3>
+              <span class="musico-instrumento">Flauta · Bombarda · Saxofón · Gaita</span>
+            </div>
+            <div class="musico-bio" aria-hidden="true">
+              <div class="musico-bio-inner">
+                <p>Fundador y alma de Gwendal desde 1972. Nacido en Bretaña, Youenn es el hilo conductor de más de cincuenta años de historia del grupo. Su dominio de la flauta travesera, la bombarda bretona, el saxofón y la gaita le convierte en uno de los músicos celtas más versátiles de Europa.</p>
+                <p>Ha llevado la música de Bretaña a los escenarios de toda Europa, con especial arraigo en España y Francia. Su capacidad para fusionar la tradición celta con el jazz y el rock sin perder la esencia de sus raíces es la seña de identidad de Gwendal.</p>
+                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Músico 2 -->
+          <article class="musico-card" data-musico="2">
+            <div class="musico-foto-wrap">
+              <img src="assets/img/musico-ludo.jpg"
+                  alt="Ludo Mesnil"
+                  loading="lazy" />
+              <div class="musico-overlay">
+                <span class="musico-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="musico-header">
+              <h3 class="musico-nombre">Ludo Mesnil</h3>
+              <span class="musico-instrumento">Guitarra</span>
+            </div>
+            <div class="musico-bio" aria-hidden="true">
+              <div class="musico-bio-inner">
+                <p>Guitarrista de la formación moderna de Gwendal, Ludo Mesnil aportó una nueva energía al grupo cuando se incorporó para el álbum War Raog en 2005. Su estilo combina la precisión técnica con una sensibilidad melódica que encaja perfectamente con el sonido celta del grupo.</p>
+                <p>Su presencia en el escenario es discreta pero fundamental: es el armazón armónico sobre el que construyen el resto de músicos.</p>
+                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Músico 3 -->
+          <article class="musico-card" data-musico="3">
+            <div class="musico-foto-wrap">
+              <img src="assets/img/musico-vincent.jpg"
+                  alt="Vincent Leutreau"
+                  loading="lazy" />
+              <div class="musico-overlay">
+                <span class="musico-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="musico-header">
+              <h3 class="musico-nombre">Vincent Leutreau</h3>
+              <span class="musico-instrumento">Violín</span>
+            </div>
+            <div class="musico-bio" aria-hidden="true">
+              <div class="musico-bio-inner">
+                <p>Vincent Leutreau es el violinista de la formación actual. Su violín añade el color melódico característico que conecta a Gwendal con la tradición folk celta e irlandesa. Su forma de tocar oscila entre la precisión clásica y la improvisación propia del folk tradicional.</p>
+                <p>En directo es uno de los músicos más expresivos del grupo, con una presencia escénica que no pasa desapercibida.</p>
+                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Músico 4 -->
+          <article class="musico-card" data-musico="4">
+            <div class="musico-foto-wrap">
+              <img src="assets/img/musico-jerome.jpg"
+                  alt="Jérôme Guéguen"
+                  loading="lazy" />
+              <div class="musico-overlay">
+                <span class="musico-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="musico-header">
+              <h3 class="musico-nombre">Jérôme Guéguen</h3>
+              <span class="musico-instrumento">Teclados</span>
+            </div>
+            <div class="musico-bio" aria-hidden="true">
+              <div class="musico-bio-inner">
+                <p>Jérôme Guéguen es el teclista de Gwendal desde la etapa de War Raog. Sus teclados dan profundidad armónica y textura a los arreglos del grupo, aportando ese puente entre la música celta tradicional y los sonidos contemporáneos.</p>
+                <p>Su trabajo es especialmente notable en los momentos más atmosféricos de los conciertos, donde crea paisajes sonoros que enmarcan perfectamente la melodía de Youenn.</p>
+                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Músico 5 -->
+          <article class="musico-card" data-musico="5">
+            <div class="musico-foto-wrap">
+              <img src="assets/img/musico-michel.jpg"
+                  alt="Michel Valy"
+                  loading="lazy" />
+              <div class="musico-overlay">
+                <span class="musico-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="musico-header">
+              <h3 class="musico-nombre">Michel Valy</h3>
+              <span class="musico-instrumento">Bajo</span>
+            </div>
+            <div class="musico-bio" aria-hidden="true">
+              <div class="musico-bio-inner">
+                <p>Michel Valy es el bajista de Gwendal, veterano de la escena musical celta francesa. Su bajo es el motor rítmico y armónico del grupo, sólido y preciso, que permite que el resto de instrumentos vuelen con libertad sobre él.</p>
+                <p>Con una larga trayectoria junto al grupo, Michel es uno de los músicos de mayor confianza de Youenn Le Berre y una pieza imprescindible de la sonoridad actual de Gwendal.</p>
+                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Músico 6 -->
+          <article class="musico-card" data-musico="6">
+            <div class="musico-foto-wrap">
+              <img src="assets/img/musico-david.jpg"
+                  alt="David Rusaouen"
+                  loading="lazy" />
+              <div class="musico-overlay">
+                <span class="musico-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="musico-header">
+              <h3 class="musico-nombre">David Rusaouen</h3>
+              <span class="musico-instrumento">Batería · Percusión</span>
+            </div>
+            <div class="musico-bio" aria-hidden="true">
+              <div class="musico-bio-inner">
+                <p>David Rusaouen es el batería de la formación actual de Gwendal. Su batería combina la potencia del rock con la ligereza necesaria para no aplastar las melodías celtas. Sabe cuándo empujar y cuándo retirarse, que es la marca de un buen músico de grupo.</p>
+                <p>En el directo de Getxo (2016) quedó grabada para siempre su manera de conducir el ritmo en los grandes momentos del concierto, especialmente en el cierre con Irish Jig.</p>
+                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- cierre formacion-grid -->
 
       </div>
     </section>
@@ -557,7 +732,7 @@ Segundo CD promocional español del mismo año, editado por Chrysalis. Tres tema
             <div class="disc-cover">
 
               <img
-                src="assets/img/album-09.jpg"
+                src="assets/img/album-08b.jpg"
                 alt="Aventures Celtiques (1998) Recopilatorio" 
                 loading="lazy"
               />
@@ -613,16 +788,10 @@ Once años después de Pan Ha Diskan, Gwendal regresa al estudio con una formaci
 Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La formación moderna al completo: Youenn Le Berre, Ludo Mesnil, Jérôme Gueguen, Vincent Leutreau al violín, David Rusaouen y Michel Valy al bajo. Casi ochenta minutos de concierto que incluyen la Suite d'Arrée, los grandes temas de su historia y una memorable versión de Irish Jig al cierre. Con invitados de la escena folk española y celta: Anxo Lorenzo con gaita gallega, Rubén Alba con gaita asturiana, Xabi Aburruzaga con trikitixa y Rubén Díez a la flauta. El disco que mejor retrata lo que es Gwendal hoy: música de raíz que no necesita fronteras.
           </article>
 
-
-
-
-
-
-
         </div>
 
         <div class="disc-more reveal">
-          <p>La discografía completa incluye más de veinte álbumes de estudio, directos y recopilaciones.<br />Consulta el catálogo completo próximamente.</p>
+          <p>La discografía completa incluye más de quince álbumes de estudio, directos y recopilaciones.<br />Consulta el catálogo completo.</p>
         </div>
 
       </div>
@@ -1023,16 +1192,30 @@ Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La forma
 
         <div class="noticias-grid">
 
-          <article class="noticia reveal" aria-label="Noticia sobre el libro">
+          <article class="noticia reveal" aria-label="Noticia sobre aniversario">
+            <div class="noticia-img-placeholder" aria-hidden="true">
+              <span>✦</span>
+            </div>
+            <div class="noticia-body">
+              <span class="noticia-tag">Efemérides</span>
+              <time class="noticia-date" datetime="2024-01-01">2024</time>
+              <h3 class="noticia-title">50 años de música celta bretona</h3>
+              <p class="noticia-excerpt">El grupo celebró medio siglo de vida con una serie de conciertos especiales que reunieron a generaciones de seguidores en toda Europa.</p>
+              <a href="#timeline" class="noticia-link">Ver cronología →</a>
+            </div>
+          </article>
+
+          <article class="noticia reveal" aria-label="Reportaje sobre Youenn Le Berre en El Progreso">
             <div class="noticia-img-placeholder" aria-hidden="true">
               <span>◈</span>
             </div>
             <div class="noticia-body">
-              <span class="noticia-tag">Libro</span>
-              <time class="noticia-date" datetime="2026-01-01">Enero 2026</time>
-              <h3 class="noticia-title">El libro oficial de Gwendal anuncia su fecha de lanzamiento</h3>
-              <p class="noticia-excerpt">Más de una década de trabajo fotográfico y documental se convertirá en una obra editorial única sobre la historia del grupo bretón.</p>
-              <a href="#libro" class="noticia-link">Leer más →</a>
+              <span class="noticia-tag">Prensa</span>
+              <time class="noticia-date" datetime="2025-07-07">7 Julio 2025</time>
+              <h3 class="noticia-title">Youenn Le Berre repasa la historia de Gwendal y su vínculo con España</h3>
+              <p class="noticia-excerpt">El cofundador del grupo recuerda la acogida del público español y la larga trayectoria de Gwendal antes de su actuación en Ortigueira.</p>
+              <a href="https://www.elprogreso.es/articulo/cultura/publico-espanol-siempre-nos-recibio-muy-nos-pide-mismo-marcha-marcha/202507072035211893552.html" class="noticia-link" target="_blank"
+    rel="noopener noreferrer">Leer más →</a>
             </div>
           </article>
 
@@ -1049,16 +1232,16 @@ Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La forma
             </div>
           </article>
 
-          <article class="noticia reveal" aria-label="Noticia sobre aniversario">
+          <article class="noticia reveal" aria-label="Noticia sobre el libro">
             <div class="noticia-img-placeholder" aria-hidden="true">
-              <span>✦</span>
+              <span>◈</span>
             </div>
             <div class="noticia-body">
-              <span class="noticia-tag">Efemérides</span>
-              <time class="noticia-date" datetime="2024-01-01">2024</time>
-              <h3 class="noticia-title">50 años de música celta bretona</h3>
-              <p class="noticia-excerpt">El grupo celebró medio siglo de vida con una serie de conciertos especiales que reunieron a generaciones de seguidores en toda Europa.</p>
-              <a href="#timeline" class="noticia-link">Ver cronología →</a>
+              <span class="noticia-tag">Libro</span>
+              <time class="noticia-date" datetime="2026-01-01">Enero 2026</time>
+              <h3 class="noticia-title">El libro oficial de Gwendal anuncia su fecha de lanzamiento</h3>
+              <p class="noticia-excerpt">Más de una década de trabajo fotográfico y documental se convertirá en una obra editorial única sobre la historia del grupo bretón.</p>
+              <a href="#libro" class="noticia-link">Leer más →</a>
             </div>
           </article>
 
@@ -1094,7 +1277,7 @@ Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La forma
                 <span class="social-icon" aria-hidden="true">▶</span>
                 <span>YouTube</span>
               </a>
-              <a href="https://instagram.com/gwendalcelticfolk" target="_blank" class="social-link" role="listitem" aria-label="Instagram de Gwendal" rel="noopener">
+              <a href="https://instagram.com/jmlfoto" target="_blank" class="social-link" role="listitem" aria-label="Instagram de Gwendal" rel="noopener">
                 <span class="social-icon" aria-hidden="true">◉</span>
                 <span>Instagram</span>
               </a>
@@ -1178,15 +1361,15 @@ Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La forma
       </nav>
 
       <div class="footer-legal">
-        <a href="#">Política de privacidad</a>
+        <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
         <span aria-hidden="true">·</span>
-        <a href="#">Aviso legal</a>
+        <a href="aviso-legal.html" target="_blank" rel="noopener noreferrer">Aviso legal</a>
         <span aria-hidden="true">·</span>
-        <a href="#">Cookies</a>
+        <a href="cookies.html" target="_blank" rel="noopener noreferrer">Cookies</a>
       </div>
 
       <div class="footer-copy">
-        <p>© 2025 José Morales · jmlfoto. Todos los derechos reservados.</p>
+        <p>© 2026 José Morales · jmlfoto. Todos los derechos reservados.</p>
         <p class="footer-disclaimer">
           Sitio web no oficial creado por el fotógrafo del grupo.
           No representa a Gwendal ni a su management.
