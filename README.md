@@ -126,12 +126,12 @@ Si publicas en Netlify en lugar de GitHub Pages:
 
 **Actualizar redes sociales** → Busca `.social-link` en `index.html` y añade las URLs reales:
 ```html
-<a href="https://facebook.com/gwendaloficial" class="social-link" ...>
+<a href="https://facebook.com/gwendalcelticfolk" class="social-link" ...>
 ```
 
 **Cambiar la fecha de lanzamiento del libro** → Busca `.badge-date`:
 ```html
-<span class="badge-date">Otoño 2025 · Disponible</span>
+<span class="badge-date">Enero 2027 · Disponible</span>
 ```
 
 ---

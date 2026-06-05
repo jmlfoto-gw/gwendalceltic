@@ -1,5 +1,5 @@
 /* ============================================================
-   GWENDAL · WEB OFICIAL
+   GWENDAL · WEB NO OFICIAL
    script.js · Interacciones y animaciones
    ============================================================ */
 
