@@ -1253,97 +1253,125 @@ Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La forma
       </div>
     </section>
 
-    <!-- ============================================================
-         CONTACTO
-    ============================================================ -->
-    <section class="section contacto" id="contacto" aria-labelledby="contact-title">
-      <div class="section-container">
+<!-- ============================================================
+     CONTACTO
+============================================================ -->
+<section class="section contacto" id="contacto" aria-labelledby="contact-title">
+  <div class="section-container">
 
-        <div class="section-header reveal">
-          <span class="section-tag">Contacto</span>
-          <h2 class="section-title" id="contact-title">Conecta con<br /><em>Gwendal</em></h2>
-          <div class="section-ornament" aria-hidden="true">⸻</div>
+    <div class="section-header reveal">
+      <span class="section-tag">Contacto</span>
+      <h2 class="section-title" id="contact-title">Conecta con<br /><em>Gwendal</em></h2>
+      <div class="section-ornament" aria-hidden="true">⸻</div>
+    </div>
+
+    <div class="contacto-grid">
+
+      <div class="contacto-info reveal reveal-left">
+        <h3 class="contacto-info-title">Redes y contacto directo</h3>
+
+        <!-- Contacto profesional / Management — primero -->
+        <div class="contacto-management">
+          <h4 class="management-title">Contratación · Prensa · Giras</h4>
+          <div class="management-card">
+            <div class="management-info">
+              <span class="management-name">Marcos Valles</span>
+              <span class="management-company">Actos Management</span>
+            </div>
+            <ul class="management-links">
+              <li>
+                <a href="mailto:actosmanagement@gmail.com" class="management-link">
+                  <span class="link-icon">✉</span>
+                  actosmanagement@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+34984104923" class="management-link">
+                  <span class="link-icon">✆</span>
+                  984 104 923
+                </a>
+              </li>
+              <li>
+                <a href="https://actosmanagement.com/" class="management-link" target="_blank" rel="noopener noreferrer">
+                  <span class="link-icon">⌘</span>
+                  actosmanagement.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="contacto-grid">
+        <!-- Redes sociales — después -->
+        <hr class="contacto-divider" aria-hidden="true">
+        <p class="contacto-redes-intro">Para cualquier consulta, colaboraciones o simplemente para saludar.</p>
 
-          <div class="contacto-info reveal reveal-left">
-            <h3 class="contacto-info-title">Redes y contacto directo</h3>
-            <p>Para conciertos, prensa, colaboraciones o simplemente para saludar. Gwendal y su equipo están aquí.</p>
-
-            <div class="social-links" role="list" aria-label="Redes sociales de Gwendal">
-              <a href="https://facebook.com/gwendalcelticfolk" target="_blank" class="social-link" role="listitem" aria-label="Facebook de Gwendal" rel="noopener">
-                <span class="social-icon" aria-hidden="true">f</span>
-                <span>Facebook</span>
-              </a>
-              <a href="https://www.youtube.com/watch?v=0iwmBHaGtWc" target="_blank" class="social-link" role="listitem" aria-label="YouTube de Gwendal" rel="noopener">
-                <span class="social-icon" aria-hidden="true">▶</span>
-                <span>YouTube</span>
-              </a>
-              <a href="https://instagram.com/gwendal.celtic" target="_blank" class="social-link" role="listitem" aria-label="Instagram de Gwendal" rel="noopener">
-                <span class="social-icon" aria-hidden="true">◉</span>
-                <span>Instagram</span>
-              </a>
-              <a href="https://open.spotify.com/intl-es/artist/5njaPBD9SLbjObNb9wcpSA" target="_blank" class="social-link" role="listitem" aria-label="Spotify de Gwendal" rel="noopener">
-                <span class="social-icon" aria-hidden="true">♪</span>
-                <span>Spotify</span>
-              </a>
-            </div>
-
-            <div class="contacto-email">
-              <span class="email-label">Email</span>
-              <a href="mailto:jose@jmlfoto.es" class="email-address">jose@jmlfoto.es</a>
-            </div>
-          </div>
-
-          <div class="contacto-form-col reveal reveal-right">
-          <form class="contacto-form" id="contacto-form"
-              action="https://formspree.io/f/mlgkekrd"
-              method="POST"
-              novalidate
-              aria-label="Formulario de contacto">
-              <h3 class="form-title">Envíanos un mensaje</h3>
-              <div class="form-group">
-                <label for="c-nombre">Nombre</label>
-                <input type="text" id="c-nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" required />
-              </div>
-              <div class="form-group">
-                <label for="c-email">Email</label>
-                <input type="email" id="c-email" name="email" placeholder="tu@email.com" autocomplete="email" required />
-              </div>
-              <div class="form-group">
-                <label for="c-asunto">Asunto</label>
-                <select id="c-asunto" name="asunto" required>
-                  <option value="">Selecciona un asunto</option>
-                  <option value="libro">El libro</option>
-                  <option value="conciertos">Conciertos</option>
-                  <option value="prensa">Prensa</option>
-                  <option value="colaboracion">Colaboración</option>
-                  <option value="otro">Otro</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="c-mensaje">Mensaje</label>
-                <textarea id="c-mensaje" name="mensaje" rows="5" placeholder="Escríbenos aquí..." required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-full">
-                <span class="btn-icon">◈</span>
-                Enviar Mensaje
-              </button>
-              <div class="form-success" id="contact-success" role="alert" aria-live="polite" hidden>
-                ✓ Mensaje enviado. Nos pondremos en contacto contigo pronto.
-              </div>
-            </form>
-          </div>
-
+        <div class="social-links" role="list" aria-label="Redes sociales de Gwendal">
+          <a href="https://facebook.com/gwendalcelticfolk" target="_blank" class="social-link" role="listitem" aria-label="Facebook de Gwendal" rel="noopener">
+            <span class="social-icon" aria-hidden="true">f</span>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.youtube.com/watch?v=0iwmBHaGtWc" target="_blank" class="social-link" role="listitem" aria-label="YouTube de Gwendal" rel="noopener">
+            <span class="social-icon" aria-hidden="true">▶</span>
+            <span>YouTube</span>
+          </a>
+          <a href="https://instagram.com/gwendal.celtic" target="_blank" class="social-link" role="listitem" aria-label="Instagram de Gwendal" rel="noopener">
+            <span class="social-icon" aria-hidden="true">◉</span>
+            <span>Instagram</span>
+          </a>
+          <a href="https://open.spotify.com/intl-es/artist/5njaPBD9SLbjObNb9wcpSA" target="_blank" class="social-link" role="listitem" aria-label="Spotify de Gwendal" rel="noopener">
+            <span class="social-icon" aria-hidden="true">♪</span>
+            <span>Spotify</span>
+          </a>
         </div>
 
       </div>
-    </section>
 
-  </main>
+      <div class="contacto-form-col reveal reveal-right">
+        <form class="contacto-form" id="contacto-form"
+            action="https://formspree.io/f/mlgkekrd"
+            method="POST"
+            novalidate
+            aria-label="Formulario de contacto">
+          <h3 class="form-title">Envíanos un mensaje</h3>
+          <div class="form-group">
+            <label for="c-nombre">Nombre</label>
+            <input type="text" id="c-nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" placeholder="tu@email.com" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label for="c-asunto">Asunto</label>
+            <select id="c-asunto" name="asunto" required>
+              <option value="">Selecciona un asunto</option>
+              <option value="libro">El libro</option>
+              <option value="conciertos">Conciertos</option>
+              <option value="prensa">Prensa</option>
+              <option value="colaboracion">Colaboración</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c-mensaje">Mensaje</label>
+            <textarea id="c-mensaje" name="mensaje" rows="5" placeholder="Escríbenos aquí..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-icon">◈</span>
+            Enviar Mensaje
+          </button>
+          <div class="form-success" id="contact-success" role="alert" aria-live="polite" hidden>
+            ✓ Mensaje enviado. Nos pondremos en contacto contigo pronto.
+          </div>
+        </form>
+      </div>
 
-  <!-- ============================================================
+    </div>
+
+  </div>
+</section>
+
+    <!-- ============================================================
        FOOTER
   ============================================================ -->
   <footer class="footer" role="contentinfo">
