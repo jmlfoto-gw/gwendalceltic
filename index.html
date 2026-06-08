@@ -926,13 +926,12 @@ Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La forma
 
           <div class="libro-cover-col reveal reveal-left">
             <div class="libro-cover-frame">
-              <div class="libro-cover-placeholder" aria-label="Portada del libro sobre Gwendal">
-                <div class="libro-cover-inner">
-                  <span class="libro-cover-title">GWENDAL</span>
-                  <span class="libro-cover-subtitle">Memoria de la Música Celta</span>
-                  <span class="libro-cover-author">Fotografías · José Morales · jmlfoto</span>                  <span class="libro-cover-year">2027</span>
-                </div>
-              </div>
+              <img
+                src="assets/img/proyecto-gwendal.jpg"
+                alt="Portada del libro Gwendal, 50 años de música celta — fotografías de José Morales · jmlfoto"
+                class="libro-cover-img"
+                loading="lazy"
+              />
               <div class="libro-cover-shadow" aria-hidden="true"></div>
             </div>
             <div class="libro-launch-badge reveal" aria-label="Fecha de lanzamiento">
@@ -988,7 +987,11 @@ Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La forma
                       action="https://formspree.io/f/maqzyzdg"
                       method="POST"
                       novalidate
-                      aria-label="Formulario de notificación de lanzamiento">                <div class="form-row">
+                      aria-label="Formulario de notificación de lanzamiento">
+                      <!-- Campo oculto para el asunto del email -->
+                      <input type="hidden" name="_subject" value="Aviso lanzamiento — Libro Gwendal">              
+                      <div class="form-row">
+
                   <div class="form-group">
                     <label for="libro-nombre">Nombre</label>
                     <input type="text" id="libro-nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required />

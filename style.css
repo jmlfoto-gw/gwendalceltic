@@ -1125,6 +1125,19 @@ figcaption.gal-caption {
   background: radial-gradient(ellipse, rgba(0,0,0,0.6), transparent 80%);
 }
 
+/* Imagen real de portada del libro */
+.libro-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 4px 12px 12px 4px; /* simula el lomo izquierdo */
+  box-shadow: 
+    -4px 0 8px rgba(0,0,0,0.4),   /* lomo */
+    4px 4px 20px rgba(0,0,0,0.5); /* sombra delantera */
+}
+
 .libro-launch-badge {
   background: linear-gradient(135deg, var(--c-gold), var(--c-gold-light));
   color: var(--c-black);
