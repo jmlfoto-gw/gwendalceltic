@@ -1325,3 +1325,30 @@ onReady(() => {
     'color: #c9a84c; font-family: serif; font-size: 14px; letter-spacing: 3px;'
   );
 });
+
+/* ── Banner de cookies ─────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  const cookieBanner = document.getElementById('cookie-banner');
+  const cookieAccept = document.getElementById('cookie-accept');
+  const cookieClose  = document.getElementById('cookie-close');
+
+  if (!cookieBanner) return;
+
+  // Mostrar si no ha aceptado antes
+  if (!localStorage.getItem('cookies-accepted')) {
+    cookieBanner.style.display = 'flex';
+  }
+
+  const closeBanner = () => {
+    cookieBanner.style.opacity = '0';
+    cookieBanner.style.transform = 'translateX(-50%) translateY(1rem)';
+    setTimeout(() => { cookieBanner.style.display = 'none'; }, 300);
+  };
+
+  cookieAccept.addEventListener('click', () => {
+    localStorage.setItem('cookies-accepted', 'true');
+    closeBanner();
+  });
+
+  cookieClose.addEventListener('click', closeBanner);
+});
