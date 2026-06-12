@@ -231,6 +231,96 @@ const initDiscFilter = () => {
   });
 };
 
+/* ─── DISCOGRAFÍA: modal de fichas ─────────────────────────── */
+const initDiscografiaModal = () => {
+  const items = $$('.disc-item');
+  const modal = $('#disc-modal');
+  const modalImage = $('#disc-modal-image');
+  const modalYear = $('#disc-modal-year');
+  const modalTitle = $('#disc-modal-title');
+  const modalText = $('#disc-modal-text');
+  const closeBtn = $('#disc-modal-close');
+
+  if (!items.length || !modal || !modalImage || !modalYear || !modalTitle || !modalText || !closeBtn) return;
+
+  let lastFocusedElement = null;
+
+  const openModal = (item) => {
+    const img = item.querySelector('.disc-cover img');
+    const year = item.querySelector('.disc-year');
+    const title = item.querySelector('.disc-name');
+    const desc = item.querySelector('.disc-desc');
+
+    if (!img || !year || !title || !desc) return;
+
+    lastFocusedElement = document.activeElement;
+
+    modalImage.src = img.src;
+    modalImage.alt = img.alt || title.textContent.trim();
+    modalYear.textContent = year.textContent.trim();
+    modalTitle.textContent = title.textContent.trim();
+    modalText.innerHTML = `<p>${desc.textContent.trim()}</p>`;
+
+    modal.hidden = false;
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+
+    requestAnimationFrame(() => {
+      modal.classList.add('is-open');
+    });
+
+    closeBtn.focus();
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+
+    setTimeout(() => {
+      modal.hidden = true;
+      modalImage.src = '';
+      modalImage.alt = '';
+      modalYear.textContent = '';
+      modalTitle.textContent = '';
+      modalText.innerHTML = '';
+      document.body.classList.remove('modal-open');
+
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }, 250);
+  };
+
+  items.forEach((item) => {
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('role', 'button');
+    item.setAttribute('aria-haspopup', 'dialog');
+    item.style.cursor = 'pointer';
+
+    item.addEventListener('click', () => openModal(item));
+
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openModal(item);
+      }
+    });
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target.closest('[data-disc-close]')) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (modal.hidden) return;
+
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
+};
 
 /* ─── FORMULARIO LIBRO ──────────────────────────────────────── */
 
@@ -1277,6 +1367,7 @@ onReady(() => {
 
   // Filtro discografía
   initDiscFilter();
+  initDiscografiaModal();
 
   // Formulario libro
   initLibroForm();
@@ -1296,7 +1387,7 @@ onReady(() => {
   // Línea del tiempo interactiva
   initTimeline();
 
-  // Galería con lightbox
+    // Galería con lightbox
   initGallery();
 
   // Hero efecto título

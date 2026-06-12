@@ -422,26 +422,40 @@
 
         <div class="disc-grid" id="disc-grid" role="list">
 
-          <article class="disc-item reveal" data-decade="70s" role="listitem">
-            <div class="disc-cover">
+          <!-- Disco 1 -->
+              <article
+                class="disc-item reveal"
+                data-decade="70s"
+                data-title="Irish Jig"
+                data-year="1974"
+                data-tracks="Irish Jig|La Horde|Johnny Mickey's Slide|Dark Lochnagar|Dance of the Little Fairies|Gavotte for the Bigoudens|Rond de Loudéac|Pop Plinn|Son ar Chistr|An Dro Retourné|Marv Pontkalleg|Ton Bale Fardig|King of the Fairies|An Dro-Nevez"
+                role="listitem"
+              >              <div class="disc-cover">
+                <img
+                  src="assets/img/album-01.jpg"
+                  alt="Portada del álbum Irish Jig - 1974"
+                  loading="lazy"
+                />
 
-              <img
-                src="assets/img/album-01.jpg"
-                alt="Portada del álbum Irish Jig - 1974"
-                loading="lazy"
-              />
-
-              <div class="disc-overlay">
-                <span class="disc-play" aria-hidden="true">▶</span>
+                <div class="disc-overlay">
+                  <span class="disc-play" aria-hidden="true">▶</span>
+                </div>
               </div>
-            </div>
-            <div class="disc-info">
-              <span class="disc-year">1974</span>
-              <h3 class="disc-name">Irish Jig (Album de estudio)</h3>
-              <p class="disc-desc">
-El punto de partida. Catorce piezas grabadas por el quinteto fundacional: Youenn Le Berre a la flauta, bombarda y saxofón; Jean-Marie Renard a la guitarra; Bruno Barré al violín; Patrice Grupallo en la mandolina y percusión; Roger Schaub al bajo. Un debut que mezcla melodías celtas tradicionales con arreglos propios, sin artificios ni grandes presupuestos. Sonaba diferente a todo lo que había entonces.</p>
-            </div>
-          </article>
+
+              <div class="disc-info">
+                <span class="disc-year">1974</span>
+                <h3 class="disc-name">Irish Jig (Album de estudio)</h3>
+                <p class="disc-desc">
+                  El punto de partida. Catorce piezas grabadas por el quinteto fundacional:
+                  Youenn Le Berre a la flauta, bombarda y saxofón; Jean-Marie Renard a la
+                  guitarra; Bruno Barré al violín; Patrice Grupallo en la mandolina y
+                  percusión; Roger Schaub al bajo. Un debut que mezcla melodías celtas
+                  tradicionales con arreglos propios, sin artificios ni grandes
+                  presupuestos. Sonaba diferente a todo lo que había entonces.
+                </p>
+              </div>
+            </article>
+          <!-- Disco 2 -->
 
            <article class="disc-item reveal" data-decade="70s" role="listitem">
             <div class="disc-cover">
@@ -463,7 +477,9 @@ El punto de partida. Catorce piezas grabadas por el quinteto fundacional: Youenn
 El primer single de Gwendal, publicado el mismo año que el álbum debut. Cara A: Irish Jig. Cara B: An Dro-Nevez. La formación fundacional al completo: Youenn Le Berre, Jean-Marie Renard, Roger Schaub, Bruno Barré y Patrice Grupallo. Dos temas que en apenas cinco minutos resumían perfectamente lo que era el grupo: raíz celta, energía fresca y un sonido que no se parecía a nada de lo que circulaba entonces. Editado en Francia por Pathé y en el Reino Unido por Epic.
             </div>
           </article>
-          
+ 
+          <!-- Disco 3 -->
+
            <article class="disc-item reveal" data-decade="70s" role="listitem">
             <div class="disc-cover">
 
@@ -1475,6 +1491,50 @@ Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La forma
   <div class="cookie-actions">
     <button class="cookie-btn-accept" id="cookie-accept">Aceptar</button>
     <button class="cookie-btn-close" id="cookie-close" aria-label="Cerrar aviso de cookies">✕</button>
+  </div>
+</div>
+
+<!-- ── MODAL DISCOGRAFÍA ───────────────────────────────────── -->
+<div
+  class="disc-modal"
+  id="disc-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="disc-modal-title"
+  aria-hidden="true"
+  hidden
+>
+  <div class="disc-modal-backdrop" data-disc-close></div>
+
+  <div class="disc-modal-panel" role="document">
+    <button
+      class="disc-modal-close"
+      id="disc-modal-close"
+      type="button"
+      aria-label="Cerrar ficha del disco"
+      data-disc-close
+    >
+      ✕
+    </button>
+
+    <div class="disc-modal-grid">
+      <figure class="disc-modal-media">
+        <img
+          id="disc-modal-image"
+          src=""
+          alt=""
+          loading="lazy"
+          width="800"
+          height="800"
+        >
+      </figure>
+
+      <div class="disc-modal-content">
+        <span class="disc-modal-year" id="disc-modal-year"></span>
+        <h3 class="disc-modal-title" id="disc-modal-title"></h3>
+        <div class="disc-modal-text" id="disc-modal-text"></div>
+      </div>
+    </div>
   </div>
 </div>
 
