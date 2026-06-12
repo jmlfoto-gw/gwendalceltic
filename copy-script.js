@@ -239,52 +239,11 @@ const initDiscografiaModal = () => {
   const modalYear = $('#disc-modal-year');
   const modalTitle = $('#disc-modal-title');
   const modalText = $('#disc-modal-text');
-  const modalTracks = $('#disc-modal-tracks');
-  const modalTracklist = $('#disc-modal-tracklist');
   const closeBtn = $('#disc-modal-close');
 
   if (!items.length || !modal || !modalImage || !modalYear || !modalTitle || !modalText || !closeBtn) return;
 
   let lastFocusedElement = null;
-
-  const renderTracklist = (item) => {
-    if (!modalTracks || !modalTracklist) return;
-
-    const raw = (item.dataset.tracks || '').trim();
-
-    if (!raw) {
-      modalTracks.hidden = true;
-      modalTracklist.innerHTML = '';
-      return;
-    }
-
-    const tracks = raw
-      .split('|')
-      .map((t) => t.trim())
-      .filter(Boolean);
-
-    if (!tracks.length) {
-      modalTracks.hidden = true;
-      modalTracklist.innerHTML = '';
-      return;
-    }
-
-    modalTracklist.innerHTML = tracks
-      .map((track) => {
-        // Formato admitido: "Título" o "Título::URL" (enlace a YouTube/Spotify futuro)
-        const [titleRaw, urlRaw] = track.split('::').map((s) => s && s.trim());
-        const title = titleRaw || track;
-
-        if (urlRaw) {
-          return `<li><a href="${urlRaw}" target="_blank" rel="noopener noreferrer">${title}</a></li>`;
-        }
-
-        return `<li><span>${title}</span></li>`;
-      })
-      .join('');
-
-    modalTracks.hidden = false;
-  };
 
   const openModal = (item) => {
     const img = item.querySelector('.disc-cover img');
@@ -301,7 +260,6 @@ const initDiscografiaModal = () => {
     modalYear.textContent = year.textContent.trim();
     modalTitle.textContent = title.textContent.trim();
     modalText.innerHTML = `<p>${desc.textContent.trim()}</p>`;
-    renderTracklist(item);
 
     modal.hidden = false;
     modal.setAttribute('aria-hidden', 'false');
@@ -325,12 +283,6 @@ const initDiscografiaModal = () => {
       modalYear.textContent = '';
       modalTitle.textContent = '';
       modalText.innerHTML = '';
-
-      if (modalTracks && modalTracklist) {
-        modalTracks.hidden = true;
-        modalTracklist.innerHTML = '';
-      }
-
       document.body.classList.remove('modal-open');
 
       if (lastFocusedElement) {
