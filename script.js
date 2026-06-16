@@ -1225,11 +1225,11 @@ const initLazyLoad = () => {
   2. Sube tus fotografías JPG/WebP
   3. Reemplaza los divs .img-placeholder, .gal-placeholder, 
      .disc-cover-placeholder y .libro-cover-placeholder
-     por etiquetas <img src="assets/img/nombre.jpg" alt="descripción" loading="lazy" />
+     por etiquetas <img src="assets/img/nombre.webp" alt="descripción" loading="lazy" />
   
   Ejemplo de reemplazo en galería:
   <figure class="gallery-item gal-large">
-    <img src="assets/img/gal-01.jpg" alt="Gwendal en concierto" loading="lazy" />
+    <img src="assets/img/gal-01.webp" alt="Gwendal en concierto" loading="lazy" />
     <figcaption class="gal-caption">En escena · Bretagne</figcaption>
   </figure>
 
