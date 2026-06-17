@@ -1,0 +1,25 @@
+{
+  "name": "Gwendal · 50 años de música celta",
+  "short_name": "Gwendal",
+  "description": "Web no oficial de Gwendal, grupo pionero de música celta bretona. Historia, discografía y el libro sobre sus cincuenta años en escena.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0c0b",
+  "theme_color": "#1a3020",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
