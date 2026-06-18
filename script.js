@@ -87,7 +87,8 @@ const initNav = () => {
 
     navLinks.forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
+      const section = link.getAttribute('data-section');
+      if (link.getAttribute('href') === `#${current}` || section === current) {
         link.classList.add('active');
       }
     });
@@ -200,8 +201,12 @@ const initDiscFilter = () => {
       const filter = btn.dataset.filter;
 
       // Estado activo
-      buttons.forEach(b => b.classList.remove('active'));
+      buttons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
 
       // Muestra/oculta con animación
       items.forEach(item => {
@@ -231,6 +236,144 @@ const initDiscFilter = () => {
   });
 };
 
+/* ─── DISCOGRAFÍA: modal de fichas ─────────────────────────── */
+const initDiscografiaModal = () => {
+  const items = $$('.disc-item');
+  const modal = $('#disc-modal');
+  const modalImage = $('#disc-modal-image');
+  const modalYear = $('#disc-modal-year');
+  const modalTitle = $('#disc-modal-title');
+  const modalText = $('#disc-modal-text');
+  const modalTracks = $('#disc-modal-tracks');
+  const modalTracklist = $('#disc-modal-tracklist');
+  const closeBtn = $('#disc-modal-close');
+
+  if (!items.length || !modal || !modalImage || !modalYear || !modalTitle || !modalText || !closeBtn) return;
+
+  let lastFocusedElement = null;
+
+  const renderTracklist = (item) => {
+    if (!modalTracks || !modalTracklist) return;
+
+    const raw = (item.dataset.tracks || '').trim();
+
+    if (!raw) {
+      modalTracks.hidden = true;
+      modalTracklist.innerHTML = '';
+      return;
+    }
+
+    const tracks = raw
+      .split('|')
+      .map((t) => t.trim())
+      .filter(Boolean);
+
+    if (!tracks.length) {
+      modalTracks.hidden = true;
+      modalTracklist.innerHTML = '';
+      return;
+    }
+
+    modalTracklist.innerHTML = tracks
+      .map((track) => {
+        // Formato admitido: "Título" o "Título::URL" (enlace a YouTube/Spotify futuro)
+        const [titleRaw, urlRaw] = track.split('::').map((s) => s && s.trim());
+        const title = titleRaw || track;
+
+        if (urlRaw) {
+          return `<li><a href="${urlRaw}" target="_blank" rel="noopener noreferrer">${title}</a></li>`;
+        }
+
+        return `<li><span>${title}</span></li>`;
+      })
+      .join('');
+
+    modalTracks.hidden = false;
+  };
+
+  const openModal = (item) => {
+    const img = item.querySelector('.disc-cover img');
+    const year = item.querySelector('.disc-year');
+    const title = item.querySelector('.disc-name');
+    const desc = item.querySelector('.disc-desc');
+
+    if (!img || !year || !title || !desc) return;
+
+    lastFocusedElement = document.activeElement;
+
+    modalImage.src = img.src;
+    modalImage.alt = img.alt || title.textContent.trim();
+    modalYear.textContent = year.textContent.trim();
+    modalTitle.textContent = title.textContent.trim();
+    modalText.innerHTML = `<p>${desc.textContent.trim()}</p>`;
+    renderTracklist(item);
+
+    modal.hidden = false;
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+
+    requestAnimationFrame(() => {
+      modal.classList.add('is-open');
+    });
+
+    closeBtn.focus();
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+
+    setTimeout(() => {
+      modal.hidden = true;
+      modalImage.src = '';
+      modalImage.alt = '';
+      modalYear.textContent = '';
+      modalTitle.textContent = '';
+      modalText.innerHTML = '';
+
+      if (modalTracks && modalTracklist) {
+        modalTracks.hidden = true;
+        modalTracklist.innerHTML = '';
+      }
+
+      document.body.classList.remove('modal-open');
+
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }, 250);
+  };
+
+  items.forEach((item) => {
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('role', 'button');
+    item.setAttribute('aria-haspopup', 'dialog');
+    item.style.cursor = 'pointer';
+
+    item.addEventListener('click', () => openModal(item));
+
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openModal(item);
+      }
+    });
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target.closest('[data-disc-close]')) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (modal.hidden) return;
+
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
+};
 
 /* ─── FORMULARIO LIBRO ──────────────────────────────────────── */
 
@@ -554,8 +697,8 @@ const initCounters = () => {
 
           if (text.includes('50+')) {
             animateValue(el, 0, 50, 1500, '+');
-          } else if (text.includes('20+')) {
-            animateValue(el, 0, 20, 1200, '+');
+          } else if (text.includes('15+')) {
+            animateValue(el, 0, 15, 1200, '+');
           }
 
           observer.unobserve(el);
@@ -575,22 +718,35 @@ const initTimeline = () => {
   const items = $$('.tl-item');
   if (!items.length) return;
 
-  items.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      const dot = item.querySelector('.tl-dot');
-      if (dot) {
-        dot.style.transform = 'scale(1.6)';
-        dot.style.boxShadow = '0 0 0 6px rgba(201,168,76,0.3), 0 0 30px rgba(201,168,76,0.6)';
-      }
-    });
+  const activateDot = (item) => {
+    const dot = item.querySelector('.tl-dot');
+    if (dot) {
+      dot.style.transform = 'scale(1.6)';
+      dot.style.boxShadow = '0 0 0 6px rgba(201,168,76,0.3), 0 0 30px rgba(201,168,76,0.6)';
+    }
+  };
 
-    item.addEventListener('mouseleave', () => {
-      const dot = item.querySelector('.tl-dot');
-      if (dot) {
-        dot.style.transform = '';
-        dot.style.boxShadow = '';
-      }
-    });
+  const deactivateDot = (item) => {
+    const dot = item.querySelector('.tl-dot');
+    if (dot) {
+      dot.style.transform = '';
+      dot.style.boxShadow = '';
+    }
+  };
+
+  items.forEach(item => {
+    // Ratón
+    item.addEventListener('mouseenter', () => activateDot(item));
+    item.addEventListener('mouseleave', () => deactivateDot(item));
+
+    // Teclado (tabindex="0" en el HTML hace estos elementos navegables)
+    item.addEventListener('focus', () => activateDot(item));
+    item.addEventListener('blur', () => deactivateDot(item));
+
+    // Táctil (móvil/tablet)
+    item.addEventListener('touchstart', () => activateDot(item), { passive: true });
+    item.addEventListener('touchend', () => deactivateDot(item));
+    item.addEventListener('touchcancel', () => deactivateDot(item));
   });
 };
 
@@ -1087,11 +1243,11 @@ const initLazyLoad = () => {
   2. Sube tus fotografías JPG/WebP
   3. Reemplaza los divs .img-placeholder, .gal-placeholder, 
      .disc-cover-placeholder y .libro-cover-placeholder
-     por etiquetas <img src="assets/img/nombre.jpg" alt="descripción" loading="lazy" />
+     por etiquetas <img src="assets/img/nombre.webp" alt="descripción" loading="lazy" />
   
   Ejemplo de reemplazo en galería:
   <figure class="gallery-item gal-large">
-    <img src="assets/img/gal-01.jpg" alt="Gwendal en concierto" loading="lazy" />
+    <img src="assets/img/gal-01.webp" alt="Gwendal en concierto" loading="lazy" />
     <figcaption class="gal-caption">En escena · Bretagne</figcaption>
   </figure>
 
@@ -1277,6 +1433,7 @@ onReady(() => {
 
   // Filtro discografía
   initDiscFilter();
+  initDiscografiaModal();
 
   // Formulario libro
   initLibroForm();
@@ -1296,7 +1453,7 @@ onReady(() => {
   // Línea del tiempo interactiva
   initTimeline();
 
-  // Galería con lightbox
+    // Galería con lightbox
   initGallery();
 
   // Hero efecto título
