@@ -38,22 +38,216 @@
   <meta name="twitter:image" content="https://gwendal.es/assets/img/og-gwendal.webp" />
 
   <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "Gwendal",
-    "description": "Grupo de música celta y folk bretón fundado en los años setenta, pioneros de la fusión céltica en Europa.",
-    "genre": ["Celtic music", "Folk", "Breton music"],
-    "foundingDate": "1972",
-    "foundingLocation": { "@type": "Place", "name": "Bretaña, Francia" },
-    "url": "https://gwendal.es/",
-    "sameAs": [
-      "https://www.facebook.com/gwendal",
-      "https://www.youtube.com/gwendal"
-    ]
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicGroup",
+      "@id": "https://gwendal.es/#gwendal",
+      "name": "Gwendal",
+      "description": "Grupo de música celta y folk bretón fundado en los años setenta, pioneros de la fusión céltica en Europa.",
+      "genre": ["Celtic music", "Folk", "Breton music"],
+      "foundingDate": "1972",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Bretaña, Francia",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Bretagne",
+          "addressCountry": "FR"
+        }
+      },
+      "url": "https://gwendal.es/",
+      "logo": "https://gwendal.es/assets/img/logo-gwendal.png",
+      "sameAs": [
+        "https://facebook.com/gwendalcelticfolk",
+        "https://instagram.com/gwendal.celtic",
+        "https://open.spotify.com/intl-es/artist/5njaPBD9SLbjObNb9wcpSA"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://gwendal.es/" },
+        { "@type": "ListItem", "position": 2, "name": "Discografía", "item": "https://gwendal.es/discografia.html" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Discografía completa de Gwendal",
+      "numberOfItems": 17,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": {
+          "@type": "MusicAlbum", "name": "Irish Jig / An Dro-Nevez",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1974",
+          "image": "https://gwendal.es/assets/img/single%201974.webp",
+          "description": "El primer single de Gwendal, publicado el mismo año que el álbum debut.",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://gwendal.es/discografia.html"
+        }},
+        { "@type": "ListItem", "position": 2, "item": {
+          "@type": "MusicAlbum", "name": "Gwendal",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1975",
+          "image": "https://gwendal.es/assets/img/album-02.webp",
+          "description": "El mismo quinteto de Irish Jig, pero más asentado y más seguro.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/StudioAlbum"
+        }},
+        { "@type": "ListItem", "position": 3, "item": {
+          "@type": "MusicAlbum", "name": "Joe Cant's Reel / Benoît",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1975",
+          "image": "https://gwendal.es/assets/img/single%201975.webp",
+          "description": "Producido por Laurent Thierry-Mieg, con portada de la ilustradora Claire Bretécher.",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://gwendal.es/discografia.html"
+        }},
+        { "@type": "ListItem", "position": 4, "item": {
+          "@type": "MusicAlbum", "name": "Rainy Day",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1977",
+          "image": "https://gwendal.es/assets/img/album-03.webp",
+          "description": "La primera gran expansión del grupo, con la incorporación de Ricky Caust y Arnaud Rogers.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/StudioAlbum"
+        }},
+        { "@type": "ListItem", "position": 5, "item": {
+          "@type": "MusicAlbum", "name": "Cam'Ye Ower Frae France",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1978",
+          "image": "https://gwendal.es/assets/img/single%201978.webp",
+          "description": "Publicado por CBS en plena expansión del grupo, en la etapa de À Vos Désirs.",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://gwendal.es/discografia.html"
+        }},
+        { "@type": "ListItem", "position": 6, "item": {
+          "@type": "MusicAlbum", "name": "Les Mouettes S'Battent",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1979",
+          "image": "https://gwendal.es/assets/img/album-04.webp",
+          "description": "La sección rítmica se refuerza con Olivier Pedron, multiinstrumentista del grupo.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/StudioAlbum"
+        }},
+        { "@type": "ListItem", "position": 7, "item": {
+          "@type": "MusicAlbum", "name": "San Sebastian Night Fever",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1980",
+          "image": "https://gwendal.es/assets/img/single%201980.webp",
+          "description": "El single más singular de toda su discografía, con dos temas exclusivos.",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://gwendal.es/discografia.html"
+        }},
+        { "@type": "ListItem", "position": 8, "item": {
+          "@type": "MusicAlbum", "name": "In Concert",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1981",
+          "image": "https://gwendal.es/assets/img/album-04b.webp",
+          "description": "El primer documento vivo de Gwendal sobre un escenario.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/LiveAlbum"
+        }},
+        { "@type": "ListItem", "position": 9, "item": {
+          "@type": "MusicAlbum", "name": "Locomo",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1983",
+          "image": "https://gwendal.es/assets/img/album-05.webp",
+          "description": "Un punto de inflexión en la formación del grupo.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/StudioAlbum"
+        }},
+        { "@type": "ListItem", "position": 10, "item": {
+          "@type": "MusicAlbum", "name": "Danse La Musique",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1985",
+          "image": "https://gwendal.es/assets/img/album-06.webp",
+          "description": "Se consolida la nueva formación del grupo a mediados de los ochenta.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/StudioAlbum"
+        }},
+        { "@type": "ListItem", "position": 11, "item": {
+          "@type": "MusicAlbum", "name": "Glen River",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1989",
+          "image": "https://gwendal.es/assets/img/album-07.webp",
+          "description": "La banda se reduce a cuarteto, con Paul Faure a los teclados.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/StudioAlbum"
+        }},
+        { "@type": "ListItem", "position": 12, "item": {
+          "@type": "MusicAlbum", "name": "Pan Ha Diskan",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1994",
+          "image": "https://gwendal.es/assets/img/album-08.webp",
+          "description": "El disco más experimental de su carrera.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/StudioAlbum"
+        }},
+        { "@type": "ListItem", "position": 13, "item": {
+          "@type": "MusicAlbum", "name": "Promo CD - Lo mejor de Gwendal",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1996",
+          "image": "https://gwendal.es/assets/img/single%201996a.webp",
+          "description": "Editado en España como CD promocional en estuche slim, con portada de Miguel Ángel Martín.",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/CompilationAlbum"
+        }},
+        { "@type": "ListItem", "position": 14, "item": {
+          "@type": "MusicAlbum", "name": "Promo CD - Medley Gwendal 1996",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1996",
+          "image": "https://gwendal.es/assets/img/single%201996b.webp",
+          "description": "Segundo CD promocional español del mismo año, editado por Chrysalis.",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/CompilationAlbum"
+        }},
+        { "@type": "ListItem", "position": 15, "item": {
+          "@type": "MusicAlbum", "name": "Aventures Celtiques",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "1998",
+          "image": "https://gwendal.es/assets/img/album-08b.webp",
+          "description": "Una selección de dieciocho temas que recorre veinte años de historia del grupo.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/CompilationAlbum"
+        }},
+        { "@type": "ListItem", "position": 16, "item": {
+          "@type": "MusicAlbum", "name": "War Raog",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "2005",
+          "image": "https://gwendal.es/assets/img/album-09.webp",
+          "description": "Once años después de Pan Ha Diskan, Gwendal regresa al estudio con una formación renovada.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/StudioAlbum"
+        }},
+        { "@type": "ListItem", "position": 17, "item": {
+          "@type": "MusicAlbum", "name": "Live in Getxo",
+          "byArtist": { "@id": "https://gwendal.es/#gwendal" },
+          "datePublished": "2016",
+          "image": "https://gwendal.es/assets/img/album-10.webp",
+          "description": "Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco.",
+          "albumReleaseType": "https://schema.org/AlbumRelease",
+          "url": "https://gwendal.es/discografia.html",
+          "albumProductionType": "https://schema.org/LiveAlbum"
+        }}
+      ]
+    }
+  ]
+}
+</script>
 
   <!-- Iconos / Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />

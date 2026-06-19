@@ -38,21 +38,81 @@
   <meta name="twitter:image" content="https://gwendal.es/assets/img/og-gwendal.webp" />
 
   <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "Gwendal",
-    "description": "Grupo de música celta y folk bretón fundado en los años setenta, pioneros de la fusión céltica en Europa.",
-    "genre": ["Celtic music", "Folk", "Breton music"],
-    "foundingDate": "1972",
-    "foundingLocation": { "@type": "Place", "name": "Bretaña, Francia" },
-    "url": "https://gwendal.es/",
-    "sameAs": [
-      "https://www.facebook.com/gwendal",
-      "https://www.youtube.com/gwendal"
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://gwendal.es/#website",
+      "url": "https://gwendal.es/",
+      "name": "Gwendal — Música Celta Bretona",
+      "description": "Web no oficial dedicada a la historia, la discografía y el legado del grupo de música celta bretona Gwendal.",
+      "inLanguage": "es-ES",
+      "author": {
+        "@id": "https://gwendal.es/#jose-morales"
+      },
+      "about": {
+        "@id": "https://gwendal.es/#gwendal"
+      }
+    },
+    {
+      "@type": "MusicGroup",
+      "@id": "https://gwendal.es/#gwendal",
+      "name": "Gwendal",
+      "description": "Grupo de música celta y folk bretón fundado en los años setenta, pioneros de la fusión céltica en Europa.",
+      "genre": ["Celtic music", "Folk", "Breton music"],
+      "foundingDate": "1972",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Bretaña, Francia",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Bretagne",
+          "addressCountry": "FR"
+        }
+      },
+      "url": "https://gwendal.es/",
+      "logo": "https://gwendal.es/assets/img/logo-gwendal.png",
+      "image": "https://gwendal.es/assets/img/og-gwendal.webp",
+      "sameAs": [
+        "https://facebook.com/gwendalcelticfolk",
+        "https://instagram.com/gwendal.celtic",
+        "https://open.spotify.com/intl-es/artist/5njaPBD9SLbjObNb9wcpSA"
+      ],
+      "member": [
+        { "@type": "Person", "name": "Youenn Le Berre", "jobTitle": "Flauta travesera, bombarda, saxofón y gaita · fundador" },
+        { "@type": "Person", "name": "Ludo Mesnil", "jobTitle": "Guitarra" },
+        { "@type": "Person", "name": "Vincent Leutreau", "jobTitle": "Violín" },
+        { "@type": "Person", "name": "Jérôme Guéguen", "jobTitle": "Teclados" },
+        { "@type": "Person", "name": "Michel Valy", "jobTitle": "Bajo" },
+        { "@type": "Person", "name": "David Rusaouen", "jobTitle": "Batería y percusión" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://gwendal.es/#jose-morales",
+      "name": "Jose Morales",
+      "alternateName": "jmlfoto",
+      "jobTitle": "Fotógrafo de conciertos",
+      "url": "https://jmlfoto.es/",
+      "sameAs": ["https://www.instagram.com/jmlfoto"]
+    },
+    {
+      "@type": "Book",
+      "@id": "https://gwendal.es/#libro",
+      "url": "https://gwendal.es/#libro",
+      "name": "Gwendal, 50 Años de Música Celta",
+      "description": "Más de doscientas fotografías inéditas y entrevistas con los miembros del grupo recorren cincuenta años de historia de Gwendal, desde su nacimiento en Bretaña hasta sus conciertos más recientes.",
+      "image": "https://gwendal.es/assets/img/proyecto-gwendal.webp",
+      "author": { "@id": "https://gwendal.es/#jose-morales" },
+      "about": { "@id": "https://gwendal.es/#gwendal" },
+      "datePublished": "2027",
+      "inLanguage": ["es", "fr"],
+      "bookFormat": "https://schema.org/Hardcover"
+    }
+  ]
+}   
+
   </script>
 
   <!-- Fuentes -->
