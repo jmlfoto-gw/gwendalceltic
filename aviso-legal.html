@@ -95,67 +95,77 @@
     <!-- End Google Tag Manager (noscript) -->
   <!-- Navegación -->
   <header class="nav-header scrolled" role="banner">
-    <nav class="nav-container" aria-label="Navegación principal">
-      <a href="index.html" class="nav-logo" aria-label="Volver al inicio">
+    <nav class="nav-container" aria-label="Navegación principal" data-i18n-aria="aviso.aria_nav">
+      <a href="index.html" class="nav-logo" aria-label="Volver al inicio" data-i18n-aria="aviso.aria_back">
         <span class="logo-text">GWENDAL</span>
-        <span class="logo-sub">Est. 1972 · Bretagne</span>
+        <span class="logo-sub" data-i18n="aviso.logo_sub">Est. 1972 · Bretagne</span>
       </a>
-      <a href="index.html" class="nav-cta">← Volver a la web</a>
+      <!-- Selector de idioma -->
+      <ul class="lang-switcher" id="nav-menu" aria-label="Seleccionar idioma" style="list-style:none;margin:0;padding:0;">
+        <li style="display:flex;align-items:center;gap:.15rem;">
+         <!--  <button class="lang-btn" data-lang="es" aria-pressed="false" title="Español">ES</button>
+          <span class="lang-sep" aria-hidden="true">·</span>
+          <button class="lang-btn" data-lang="fr" aria-pressed="false" title="Français">FR</button>
+          <span class="lang-sep" aria-hidden="true">·</span>
+          <button class="lang-btn" data-lang="en" aria-pressed="false" title="English">EN</button>-->
+        </li>
+      </ul>
+      <a href="index.html" class="nav-cta" data-i18n="aviso.nav_back">← Volver a la web</a>
     </nav>
   </header>
 
   <main>
 
     <div class="legal-header">
-      <span class="section-tag">Legal</span>
-      <h1 class="section-title">Aviso Legal</h1>
+      <span class="section-tag" data-i18n="aviso.tag">Legal</span>
+      <h1 class="section-title" data-i18n="aviso.h1">Aviso Legal</h1>
     </div>
 
     <div class="legal-body">
       <div class="legal-container">
 
-        <span class="legal-date">Última actualización: junio de 2026</span>
+        <span class="legal-date" data-i18n="aviso.date">Última actualización: junio de 2026</span>
 
-        <h2>1. Titular del sitio web</h2>
-        <p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE), se facilitan los siguientes datos:</p>
+        <h2 data-i18n="aviso.h1_1">1. Titular del sitio web</h2>
+        <p data-i18n="aviso.p1_1">En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE), se facilitan los siguientes datos:</p>
         <ul>
-          <li><strong>Titular:</strong> Jose Morales</li>
-          <li><strong>Actividad:</strong> Fotógrafo profesional · jmlfoto</li>
-          <li><strong>Domicilio:</strong> Madrid, España</li>
-          <li><strong>Email:</strong> <a href="mailto:jose@jmlfoto.es">jose@jmlfoto.es</a></li>
-          <li><strong>URL:</strong> <a href="https://jmlfoto-gw.github.io/gwendalceltic/">https://jmlfoto-gw.github.io/gwendalceltic/</a></li>
+          <li><strong data-i18n="aviso.li_tit">Titular:</strong> Jose Morales</li>
+          <li><strong data-i18n="aviso.li_act">Actividad:</strong> <span data-i18n="aviso.li_act_v">Fotógrafo profesional · jmlfoto</span></li>
+          <li><strong data-i18n="aviso.li_dom">Domicilio:</strong> <span data-i18n="aviso.li_dom_v">Madrid, España</span></li>
+          <li><strong data-i18n="aviso.li_mail">Email:</strong> <a href="mailto:jose@jmlfoto.es">jose@jmlfoto.es</a></li>
+          <li><strong data-i18n="aviso.li_url">URL:</strong> <a href="https://jmlfoto-gw.github.io/gwendalceltic/">https://jmlfoto-gw.github.io/gwendalceltic/</a></li>
         </ul>
 
-        <h2>2. Naturaleza del sitio</h2>
-        <p>Este sitio web es un <strong>proyecto personal no oficial</strong> creado por Jose Morales, fotógrafo habitual del grupo Gwendal durante más de una década y autor del próximo libro sobre la historia de la banda.</p>
-        <p>Este sitio <strong>no representa al grupo Gwendal</strong>, a sus miembros ni a su management (Actos Management · Marcos Valles). Cualquier referencia al grupo se realiza con fines informativos, culturales y de divulgación musical.</p>
+        <h2 data-i18n="aviso.h1_2">2. Naturaleza del sitio</h2>
+        <p data-i18n-html="aviso.p2_1">Este sitio web es un <strong>proyecto personal no oficial</strong> creado por Jose Morales, fotógrafo habitual del grupo Gwendal durante más de una década y autor del próximo libro sobre la historia de la banda.</p>
+        <p data-i18n-html="aviso.p2_2">Este sitio <strong>no representa al grupo Gwendal</strong>, a sus miembros ni a su management (Actos Management · Marcos Valles). Cualquier referencia al grupo se realiza con fines informativos, culturales y de divulgación musical.</p>
 
-        <h2>3. Propiedad intelectual</h2>
+        <h2 data-i18n="aviso.h1_3">3. Propiedad intelectual</h2>
 
-        <h3>Fotografías</h3>
-        <p>Todas las fotografías publicadas en este sitio son propiedad de <strong>© Jose Morales · jmlfoto</strong>, salvo las pertenecientes al archivo histórico del grupo, cuyos derechos corresponden a sus respectivos autores.</p>
-        <p>Queda prohibida la reproducción, distribución o uso de las fotografías sin autorización expresa y por escrito del autor.</p>
+        <h3 data-i18n="aviso.h3_foto">Fotografías</h3>
+        <p data-i18n-html="aviso.p3_foto_1">Todas las fotografías publicadas en este sitio son propiedad de <strong>© Jose Morales · jmlfoto</strong>, salvo las pertenecientes al archivo histórico del grupo, cuyos derechos corresponden a sus respectivos autores.</p>
+        <p data-i18n="aviso.p3_foto_2">Queda prohibida la reproducción, distribución o uso de las fotografías sin autorización expresa y por escrito del autor.</p>
 
-        <h3>Textos y contenidos</h3>
-        <p>Los textos, descripciones y contenidos editoriales de este sitio han sido redactados por Jose Morales y son de su propiedad intelectual. Los datos históricos y biográficos sobre el grupo son de dominio público o han sido obtenidos de fuentes públicas debidamente citadas.</p>
+        <h3 data-i18n="aviso.h3_text">Textos y contenidos</h3>
+        <p data-i18n="aviso.p3_text">Los textos, descripciones y contenidos editoriales de este sitio han sido redactados por Jose Morales y son de su propiedad intelectual. Los datos históricos y biográficos sobre el grupo son de dominio público o han sido obtenidos de fuentes públicas debidamente citadas.</p>
 
-        <h3>Diseño y código</h3>
-        <p>El diseño visual y el código de este sitio web han sido desarrollados por Jose Morales · jmlfoto. El sitio está alojado en GitHub Pages.</p>
+        <h3 data-i18n="aviso.h3_code">Diseño y código</h3>
+        <p data-i18n="aviso.p3_code">El diseño visual y el código de este sitio web han sido desarrollados por Jose Morales · jmlfoto. El sitio está alojado en GitHub Pages.</p>
 
-        <h3>Marcas</h3>
-        <p>El nombre <strong>Gwendal</strong> es marca registrada de sus titulares. Su uso en este sitio tiene carácter exclusivamente informativo y cultural, sin ánimo comercial ni de confusión con el sitio oficial del grupo.</p>
+        <h3 data-i18n="aviso.h3_brand">Marcas</h3>
+        <p data-i18n-html="aviso.p3_brand">El nombre <strong>Gwendal</strong> es marca registrada de sus titulares. Su uso en este sitio tiene carácter exclusivamente informativo y cultural, sin ánimo comercial ni de confusión con el sitio oficial del grupo.</p>
 
-        <h2>4. Responsabilidad</h2>
-        <p>Jose Morales no se hace responsable de los daños o perjuicios que pudieran derivarse del uso de la información contenida en este sitio. Los contenidos se ofrecen de buena fe y con fines divulgativos.</p>
-        <p>Los enlaces a sitios externos (redes sociales, artículos de prensa, plataformas musicales) se ofrecen como referencia informativa. Jose Morales no controla ni se responsabiliza del contenido de esos sitios.</p>
+        <h2 data-i18n="aviso.h1_4">4. Responsabilidad</h2>
+        <p data-i18n="aviso.p4_1">Jose Morales no se hace responsable de los daños o perjuicios que pudieran derivarse del uso de la información contenida en este sitio. Los contenidos se ofrecen de buena fe y con fines divulgativos.</p>
+        <p data-i18n="aviso.p4_2">Los enlaces a sitios externos (redes sociales, artículos de prensa, plataformas musicales) se ofrecen como referencia informativa. Jose Morales no controla ni se responsabiliza del contenido de esos sitios.</p>
 
-        <h2>5. Legislación aplicable</h2>
-        <p>Este aviso legal se rige por la legislación española. Para cualquier controversia derivada del uso de este sitio, las partes se someten a los juzgados y tribunales de Madrid.</p>
+        <h2 data-i18n="aviso.h1_5">5. Legislación aplicable</h2>
+        <p data-i18n="aviso.p5">Este aviso legal se rige por la legislación española. Para cualquier controversia derivada del uso de este sitio, las partes se someten a los juzgados y tribunales de Madrid.</p>
 
-        <h2>6. Contacto</h2>
-        <p>Para cualquier consulta relacionada con este aviso legal puedes escribir a <a href="mailto:jose@jmlfoto.es">jose@jmlfoto.es</a>.</p>
+        <h2 data-i18n="aviso.h1_6">6. Contacto</h2>
+        <p><span data-i18n="aviso.p6">Para cualquier consulta relacionada con este aviso legal puedes escribir a</span> <a href="mailto:jose@jmlfoto.es">jose@jmlfoto.es</a>.</p>
 
-        <a href="index.html" class="legal-back">← Volver a la web</a>
+        <a href="index.html" class="legal-back" data-i18n="aviso.back">← Volver a la web</a>
 
       </div>
     </div>
@@ -166,21 +176,23 @@
     <div class="footer-container">
       <div class="footer-brand">
         <span class="footer-logo">GWENDAL</span>
-        <span class="footer-tagline">Musique Celtique · Bretagne · Desde 1972</span>
+        <span class="footer-tagline" data-i18n="aviso.footer.tagline">Musique Celtique · Bretagne · Desde 1972</span>
       </div>
       <div class="footer-legal">
-        <a href="privacidad.html">Política de privacidad</a>
+        <a href="privacidad.html" data-i18n="aviso.footer.priv">Política de privacidad</a>
         <span>·</span>
-        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="aviso-legal.html" data-i18n="aviso.footer.aviso">Aviso legal</a>
         <span>·</span>
-        <a href="cookies.html">Cookies</a>
+        <a href="cookies.html" data-i18n="aviso.footer.cookies">Cookies</a>
       </div>
       <div class="footer-copy">
-        <p>© 2026 Jose Morales · jmlfoto. Todos los derechos reservados.</p>
+        <p data-i18n="aviso.footer.copy">© 2026 Jose Morales · jmlfoto. Todos los derechos reservados.</p>
       </div>
     </div>
     <div class="footer-ornament" aria-hidden="true"><span>✦ · ✦ · ✦</span></div>
   </footer>
 
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
 </body>
 </html>

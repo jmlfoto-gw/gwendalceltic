@@ -20,6 +20,12 @@
   <meta name="author" content="Jose Morales · jmlfoto" />
   <link rel="canonical" href="https://gwendal.es/" />
 
+  <!-- Hreflang multilingüe -->
+  <link rel="alternate" hreflang="es" href="https://gwendal.es/" />
+  <link rel="alternate" hreflang="fr" href="https://gwendal.es/" />
+  <link rel="alternate" hreflang="en" href="https://gwendal.es/" />
+  <link rel="alternate" hreflang="x-default" href="https://gwendal.es/" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Gwendal – Música Celta Bretona" />
@@ -139,30 +145,30 @@
     <!-- End Google Tag Manager (noscript) -->
 
   <!-- Enlace de salto para accesibilidad por teclado -->
-  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <a href="#main-content" class="skip-link" data-i18n="skip">Saltar al contenido principal</a>
 
   <!-- ============================================================
        NAVEGACIÓN
   ============================================================ -->
   <header class="nav-header" id="nav-header" role="banner">
-    <nav class="nav-container" aria-label="Navegación principal">
+    <nav class="nav-container" aria-label="Navegación principal" data-i18n-aria="nav.aria" data-i18n-aria="nav.aria">
       <a href="#inicio" class="nav-logo" aria-label="Ir al inicio">
         <span class="logo-text">GWENDAL</span>
         <span class="logo-sub">Est. 1972 · Bretagne</span>
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" data-i18n-aria="nav.abrir_menu" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="nav-menu" role="list">
-        <li><a href="#sobre" class="nav-link">Historia</a></li>
-        <li><a href="#formacion" class="nav-link">El Grupo</a></li>
-        <li><a href="discografia.html" class="nav-link" data-section="discografia">Discografía</a></li>
-        <li><a href="#galeria" class="nav-link">Galería</a></li>
-        <li><a href="#libro" class="nav-link">El Libro</a></li>
-        <li><a href="#timeline" class="nav-link">Cronología</a></li>
-        <li><a href="#noticias" class="nav-link">Noticias</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
-        <li><a href="#libro" class="nav-cta">Reservar Libro</a></li>
+        <li><a href="#sobre" class="nav-link" data-i18n="nav.historia">Historia</a></li>
+        <li><a href="#formacion" class="nav-link" data-i18n="nav.elgrupo">El Grupo</a></li>
+        <li><a href="discografia.html" class="nav-link" data-section="discografia" data-i18n="nav.disc">Discografía</a></li>
+        <li><a href="#galeria" class="nav-link" data-i18n="nav.galeria">Galería</a></li>
+        <li><a href="#libro" class="nav-link" data-i18n="nav.libro">El Libro</a></li>
+        <li><a href="#timeline" class="nav-link" data-i18n="nav.cronologia">Cronología</a></li>
+        <li><a href="#noticias" class="nav-link" data-i18n="nav.noticias">Noticias</a></li>
+        <li><a href="#contacto" class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
+        <li><a href="#libro" class="nav-cta" data-i18n="nav.reservar">Reservar Libro</a></li>
       </ul>
     </nav>
   </header>
@@ -193,15 +199,15 @@
       <div class="hero-content">
 
         <div class="hero-badge">
-          <span>Música Celta · Bretagne · Desde 1972</span>
+          <span data-i18n="hero.badge">Música Celta · Bretagne · Desde 1972</span>
         </div>
 
         <h1 class="hero-title">
           <span class="hero-title-main">GWENDAL</span>
-          <span class="hero-title-sub">50 años de música celta</span>
+          <span class="hero-title-sub" data-i18n="hero.subtitle">50 años de música celta</span>
         </h1>
 
-        <p class="hero-tagline">
+        <p class="hero-tagline" data-i18n-html="hero.tagline">
           Más de cincuenta años haciendo vibrar Europa con la música ancestral de Bretaña.<br />
           Una historia de escenarios, viento, mar y alma celta.
         </p>
@@ -209,41 +215,41 @@
         <div class="hero-actions">
           <a href="#libro" class="btn btn-primary">
             <span class="btn-icon">◈</span>
-            Reservar el Libro
+            <span data-i18n="hero.btn_libro">Reservar el Libro</span>
           </a>
           <a href="#sobre" class="btn btn-secondary">
             <span class="btn-icon">↓</span>
-            Descubrir su Historia
+            <span data-i18n="hero.btn_hist">Descubrir su Historia</span>
           </a>
         </div>
 
         <div class="hero-stats" aria-label="Datos del grupo">
           <div class="stat">
             <strong>50+</strong>
-            <span>años en escena</span>
+            <span data-i18n="hero.stat_anos">años en escena</span>
           </div>
           <div class="stat-divider" aria-hidden="true">·</div>
           <div class="stat">
             <strong>15+</strong>
-            <span>álbumes</span>
+            <span data-i18n="hero.stat_alb">álbumes</span>
           </div>
           <div class="stat-divider" aria-hidden="true">·</div>
           <div class="stat">
             <strong>Millones</strong>
-            <span>de seguidores</span>
+            <span data-i18n="hero.stat_fans">de seguidores</span>
           </div>
         </div><!-- cierre hero-stats -->
 
         <!-- Nota de autoría -->
         <p class="hero-tagline">
-          Sitio web no oficial · Creado por Jose Morales, fotógrafo y autor del libro
+          <span data-i18n="hero.autor"><span data-i18n="hero.autor">Sitio web no oficial · Creado por Jose Morales, fotógrafo y autor del libro</span></span>
         </p>
 
       </div><!-- cierre hero-content -->
 
       <div class="hero-scroll" aria-hidden="true">
         <span class="scroll-line"></span>
-        <span class="scroll-label">Scroll</span>
+        <span class="scroll-label" data-i18n="hero.scroll">Scroll</span>
       </div>
 
     </section>
@@ -255,38 +261,36 @@
       <div class="section-container">
 
         <div class="section-header reveal">
-          <span class="section-tag">Historia</span>
-          <h2 class="section-title" id="sobre-title">Quiénes son<br /><em>Gwendal</em></h2>
+          <span class="section-tag" data-i18n="sobre.tag">Historia</span>
+          <h2 class="section-title" id="sobre-title" data-i18n-html="sobre.title">Quiénes son<br /><em>Gwendal</em></h2>
           <div class="section-ornament" aria-hidden="true">⸻</div>
         </div>
 
         <div class="sobre-grid">
           <div class="sobre-text reveal reveal-left">
-            <p class="sobre-lead">
+            <p class="sobre-lead" data-i18n="sobre.lead">
               Nacidos en el corazón de Bretaña a principios de los años setenta, Gwendal fue uno de los primeros grupos en llevar la música celta tradicional a los grandes escenarios europeos, fundiéndola con el rock, el jazz y el folk contemporáneo.
             </p>
             <p>
-              Su nombre —tomado de la lengua bretona— evoca lo antiguo y lo eterno. Gaitas, bombas, violines, guitarras y voces entrelazadas crearon un sonido inconfundible que atravesó fronteras y generaciones. Gwendal no solo interpretaba música: contaba la memoria de un pueblo.
+              <span data-i18n="sobre.p1"><span data-i18n="sobre.p1">Su nombre —tomado de la lengua bretona— evoca lo antiguo y lo eterno. Gaitas, bombas, violines, guitarras y voces entrelazadas crearon un sonido inconfundible que atravesó fronteras y generaciones. Gwendal no solo interpretaba música: contaba la memoria de un pueblo.
             </p>
-            <p>
-              Con especial arraigo en España y Francia, el grupo llenó teatros, festivales y plazas durante décadas, convirtiéndose en embajadores de la identidad celta ante audiencias que jamás habían escuchado una gaita bretona. Su legado sigue vivo.
-            </p>
+            <p data-i18n="sobre.p2">Con especial arraigo en España y Francia, el grupo llenó teatros, festivales y plazas durante décadas, convirtiéndose en embajadores de la identidad celta ante audiencias que jamás habían escuchado una gaita bretona. Su legado sigue vivo.</p>
             <div class="sobre-hitos">
               <div class="hito reveal">
                 <span class="hito-year">1972</span>
-                <span class="hito-desc">Fundación en Bretaña</span>
+                <span class="hito-desc" data-i18n="sobre.h1_d">Fundación en Bretaña</span>
               </div>
               <div class="hito reveal">
                 <span class="hito-year">1974</span>
-                <span class="hito-desc">Primer álbum publicado</span>
+                <span class="hito-desc" data-i18n="sobre.h2_d">Primer álbum publicado</span>
               </div>
               <div class="hito reveal">
                 <span class="hito-year">1980s</span>
-                <span class="hito-desc">Conquista de España</span>
+                <span class="hito-desc" data-i18n="sobre.h3_d">Conquista de España</span>
               </div>
               <div class="hito reveal">
-                <span class="hito-year">Hoy</span>
-                <span class="hito-desc">Legado y nuevas generaciones</span>
+                <span class="hito-year" data-i18n="sobre.h4_y">Hoy</span>
+                <span class="hito-desc" data-i18n="sobre.h4_d">Legado y nuevas generaciones</span>
               </div>
             </div>
           </div>
@@ -301,7 +305,7 @@
               />
               </div>
               <div class="sobre-img-caption">
-                Gwendal en los inicios del siglo XXI
+                <span data-i18n="sobre.caption"><span data-i18n="sobre.caption">Gwendal en los inicios del siglo XXI</span></span>
               </div>
             </div>
           </div>
@@ -318,10 +322,10 @@
       <div class="section-container">
 
         <div class="section-header reveal">
-          <span class="section-tag">El Grupo</span>
-          <h2 class="section-title" id="formacion-title">Formación <em>Actual</em></h2>
+          <span class="section-tag" data-i18n="formacion.tag">El Grupo</span>
+          <h2 class="section-title" id="formacion-title" data-i18n-html="formacion.title">Formación <em>Actual</em></h2>
           <div class="section-ornament" aria-hidden="true">⸻</div>
-          <p class="section-subtitle">Haz clic en cada músico para conocer su historia</p>
+          <p class="section-subtitle" data-i18n="formacion.subtitle">Haz clic en cada músico para conocer su historia</p>
         </div>
 
         <div class="formacion-grid">
@@ -342,9 +346,10 @@
             </div>
             <div class="musico-bio" aria-hidden="true">
               <div class="musico-bio-inner">
-                <p>Fundador y alma de Gwendal desde 1972. Nacido en Bretaña, Youenn es el hilo conductor de más de cincuenta años de historia del grupo. Su dominio de la flauta travesera, la bombarda bretona, el saxofón y la gaita le convierte en uno de los músicos celtas más versátiles de Europa.</p>
+                <div class="musico-bio-text" data-i18n-html="bio.youenn"><p>Fundador y alma de Gwendal desde 1972. Nacido en Bretaña, Youenn es el hilo conductor de más de cincuenta años de historia del grupo. Su dominio de la flauta travesera, la bombarda bretona, el saxofón y la gaita le convierte en uno de los músicos celtas más versátiles de Europa.</p>
                 <p>Ha llevado la música de Bretaña a los escenarios de toda Europa, con especial arraigo en España y Francia. Su capacidad para fusionar la tradición celta con el jazz y el rock sin perder la esencia de sus raíces es la seña de identidad de Gwendal.</p>
-                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+                </div>
+                <button class="musico-cerrar" data-i18n="formacion.cerrar" data-i18n-aria="formacion.aria_cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
               </div>
             </div>
           </article>
@@ -365,9 +370,10 @@
             </div>
             <div class="musico-bio" aria-hidden="true">
               <div class="musico-bio-inner">
-                <p>Guitarrista de la formación moderna de Gwendal, Ludo Mesnil aportó una nueva energía al grupo cuando se incorporó para el álbum War Raog en 2005. Su estilo combina la precisión técnica con una sensibilidad melódica que encaja perfectamente con el sonido celta del grupo.</p>
+                <div class="musico-bio-text" data-i18n-html="bio.ludo"><p>Guitarrista de la formación moderna de Gwendal, Ludo Mesnil aportó una nueva energía al grupo cuando se incorporó para el álbum War Raog en 2005. Su estilo combina la precisión técnica con una sensibilidad melódica que encaja perfectamente con el sonido celta del grupo.</p>
                 <p>Su presencia en el escenario es discreta pero fundamental: es el armazón armónico sobre el que construyen el resto de músicos.</p>
-                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+                </div>
+                <button class="musico-cerrar" data-i18n="formacion.cerrar" data-i18n-aria="formacion.aria_cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
               </div>
             </div>
           </article>
@@ -388,9 +394,10 @@
             </div>
             <div class="musico-bio" aria-hidden="true">
               <div class="musico-bio-inner">
-                <p>Vincent Leutreau es el violinista de la formación actual. Su violín añade el color melódico característico que conecta a Gwendal con la tradición folk celta e irlandesa. Su forma de tocar oscila entre la precisión clásica y la improvisación propia del folk tradicional.</p>
+                <div class="musico-bio-text" data-i18n-html="bio.vincent"><p>Vincent Leutreau es el violinista de la formación actual. Su violín añade el color melódico característico que conecta a Gwendal con la tradición folk celta e irlandesa. Su forma de tocar oscila entre la precisión clásica y la improvisación propia del folk tradicional.</p>
                 <p>En directo es uno de los músicos más expresivos del grupo, con una presencia escénica que no pasa desapercibida.</p>
-                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+                </div>
+                <button class="musico-cerrar" data-i18n="formacion.cerrar" data-i18n-aria="formacion.aria_cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
               </div>
             </div>
           </article>
@@ -411,9 +418,10 @@
             </div>
             <div class="musico-bio" aria-hidden="true">
               <div class="musico-bio-inner">
-                <p>Jérôme Guéguen es el teclista de Gwendal desde la etapa de War Raog. Sus teclados dan profundidad armónica y textura a los arreglos del grupo, aportando ese puente entre la música celta tradicional y los sonidos contemporáneos.</p>
+                <div class="musico-bio-text" data-i18n-html="bio.jerome"><p>Jérôme Guéguen es el teclista de Gwendal desde la etapa de War Raog. Sus teclados dan profundidad armónica y textura a los arreglos del grupo, aportando ese puente entre la música celta tradicional y los sonidos contemporáneos.</p>
                 <p>Su trabajo es especialmente notable en los momentos más atmosféricos de los conciertos, donde crea paisajes sonoros que enmarcan perfectamente la melodía de Youenn.</p>
-                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+                </div>
+                <button class="musico-cerrar" data-i18n="formacion.cerrar" data-i18n-aria="formacion.aria_cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
               </div>
             </div>
           </article>
@@ -434,9 +442,10 @@
             </div>
             <div class="musico-bio" aria-hidden="true">
               <div class="musico-bio-inner">
-                <p>Michel Valy es el bajista de Gwendal, veterano de la escena musical celta francesa. Su bajo es el motor rítmico y armónico del grupo, sólido y preciso, que permite que el resto de instrumentos vuelen con libertad sobre él.</p>
+                <div class="musico-bio-text" data-i18n-html="bio.michel"><p>Michel Valy es el bajista de Gwendal, veterano de la escena musical celta francesa. Su bajo es el motor rítmico y armónico del grupo, sólido y preciso, que permite que el resto de instrumentos vuelen con libertad sobre él.</p>
                 <p>Con una larga trayectoria junto al grupo, Michel es uno de los músicos de mayor confianza de Youenn Le Berre y una pieza imprescindible de la sonoridad actual de Gwendal.</p>
-                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+                </div>
+                <button class="musico-cerrar" data-i18n="formacion.cerrar" data-i18n-aria="formacion.aria_cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
               </div>
             </div>
           </article>
@@ -457,9 +466,10 @@
             </div>
             <div class="musico-bio" aria-hidden="true">
               <div class="musico-bio-inner">
-                <p>David Rusaouen es el batería de la formación actual de Gwendal. Su batería combina la potencia del rock con la ligereza necesaria para no aplastar las melodías celtas. Sabe cuándo empujar y cuándo retirarse, que es la marca de un buen músico de grupo.</p>
+                <div class="musico-bio-text" data-i18n-html="bio.david"><p>David Rusaouen es el batería de la formación actual de Gwendal. Su batería combina la potencia del rock con la ligereza necesaria para no aplastar las melodías celtas. Sabe cuándo empujar y cuándo retirarse, que es la marca de un buen músico de grupo.</p>
                 <p>En el directo de Getxo (2016) quedó grabada para siempre su manera de conducir el ritmo en los grandes momentos del concierto, especialmente en el cierre con Irish Jig.</p>
-                <button class="musico-cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
+                </div>
+                <button class="musico-cerrar" data-i18n="formacion.cerrar" data-i18n-aria="formacion.aria_cerrar" aria-label="Cerrar biografía">Cerrar ✕</button>
               </div>
             </div>
           </article>
@@ -476,14 +486,14 @@
       <div class="section-container">
     
         <div class="section-header reveal">
-          <span class="section-tag">Música</span>
-          <h2 class="section-title" id="disc-title">Discografía</h2>
+          <span class="section-tag" data-i18n="disc.tag">Música</span>
+          <h2 class="section-title" id="disc-title" data-i18n="disc.title">Discografía</h2>
           <div class="section-ornament" aria-hidden="true">⸻</div>
-          <p class="section-subtitle">Más de cinco décadas de música que trasciende fronteras</p>
+          <p class="section-subtitle" data-i18n="disc.subtitle">Más de cinco décadas de música que trasciende fronteras</p>
         </div>
     
         <div class="disc-filter reveal" role="group" aria-label="Filtrar discografía por década">
-          <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="disc.filter_all">Todos</button>
           <button class="filter-btn" data-filter="70s" aria-pressed="false">70s</button>
           <button class="filter-btn" data-filter="80s" aria-pressed="false">80s</button>
           <button class="filter-btn" data-filter="90s" aria-pressed="false">90s</button>
@@ -506,8 +516,8 @@
     
             <div class="disc-info">
               <span class="disc-year">1974</span>
-              <h3 class="disc-name">Irish Jig (Album de estudio)</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d01_name">Irish Jig (Album de estudio)</h3>
+              <p class="disc-desc" data-i18n="disc.d01_desc">
                 El punto de partida. Catorce piezas grabadas por el quinteto fundacional:
                 Youenn Le Berre a la flauta, bombarda y saxofón; Jean-Marie Renard a la
                 guitarra; Bruno Barré al violín; Patrice Grupallo en la mandolina y
@@ -531,8 +541,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1974</span>
-              <h3 class="disc-name">Irish Jig / An Dro-Nevez (Single)</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d02_name">Irish Jig / An Dro-Nevez (Single)</h3>
+              <p class="disc-desc" data-i18n="disc.d02_desc">
                 El primer single de Gwendal, publicado el mismo año que el álbum debut. Cara A: Irish Jig. Cara B: An
                 Dro-Nevez. La formación fundacional al completo: Youenn Le Berre, Jean-Marie Renard, Roger Schaub, Bruno
                 Barré y Patrice Grupallo. Dos temas que en apenas cinco minutos resumían perfectamente lo que era el grupo:
@@ -555,8 +565,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1975</span>
-              <h3 class="disc-name">Gwendal (Album de estudio)</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d03_name">Gwendal (Album de estudio)</h3>
+              <p class="disc-desc" data-i18n="disc.d03_desc">
                 El mismo quinteto de Irish Jig, pero más asentado y más seguro. Bruno Barré añade el salterio a su paleta y
                 Roger Schaub toca también la guitarra eléctrica. El sonido se amplía sin perder la esencia. Diez piezas que
                 confirman que el debut no fue casualidad.
@@ -577,8 +587,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1975</span>
-              <h3 class="disc-name">Joe Cant's Reel / Benoît (Single)</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d04_name">Joe Cant's Reel / Benoît (Single)</h3>
+              <p class="disc-desc" data-i18n="disc.d04_desc">
                 Producido por Laurent Thierry-Mieg y con portada de la ilustradora Claire Bretécher, un detalle que habla
                 del ambiente cultural en el que se movía el grupo en aquellos años. Cara A con el tema que daba título a su
                 segundo álbum, cara B con Benoît, una de las piezas más personales de esa época. Editado por Pathé y CBS.
@@ -599,8 +609,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1977</span>
-              <h3 class="disc-name">Rainy Day (Album de estudio)</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d05_name">Rainy Day (Album de estudio)</h3>
+              <p class="disc-desc" data-i18n="disc.d05_desc">
                 La primera gran expansión. Se incorporan Ricky Caust en guitarra y mandolina, y Arnaud Rogers a la batería.
                 El grupo crece en color rítmico y en energía. La suite Mon Joly Scooter, de más de diecisiete minutos, es la
                 primera señal clara de que Gwendal no tiene miedo a la ambición.
@@ -621,8 +631,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1978</span>
-              <h3 class="disc-name">Cam'Ye Ower Frae France (Single)</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d06_name">Cam'Ye Ower Frae France (Single)</h3>
+              <p class="disc-desc" data-i18n="disc.d06_desc">
                 Publicado por CBS en plena expansión del grupo, este single muestra ya la formación ampliada de la etapa de
                 À Vos Désirs: Youenn Le Berre, Jean-Marie Renard, Roger Schaub, Bruno Barré, Ricky Caust y Arnaud Rogers.
                 Dos temas de raíz escocesa e irlandesa que funcionaban perfectamente como tarjeta de presentación en radio.
@@ -644,8 +654,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1979</span>
-              <h3 class="disc-name">Les Mouettes S'Battent (Álbum de estudio)</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d07_name">Les Mouettes S'Battent (Álbum de estudio)</h3>
+              <p class="disc-desc" data-i18n="disc.d07_desc">
                 La sección rítmica se refuerza con Olivier Pedron, multiinstrumentista que aporta batería, percusión,
                 órgano, guitarra eléctrica y mandolina. El núcleo Le Berre–Renard–Barré–Schaub resiste, pero el sonido se
                 hace más denso y variado. Youenn toca ya la gaita además de la flauta y el saxofón.
@@ -667,8 +677,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1980</span>
-              <h3 class="disc-name">San Sebastian Night Fever (Single)</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d08_name">San Sebastian Night Fever (Single)</h3>
+              <p class="disc-desc" data-i18n="disc.d08_desc">
                 El single más singular de toda su discografía. Los dos temas son exclusivos: no aparecen en ningún álbum en
                 estas versiones. San Sebastian Night Fever es una grabación de estudio que solo tiene otra versión conocida,
                 la del directo de In Concert. Y la versión de Bee New aquí es completamente diferente a la incluida en Les
@@ -691,8 +701,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1981</span>
-              <h3 class="disc-name">In Concert</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d09_name">In Concert</h3>
+              <p class="disc-desc" data-i18n="disc.d09_desc">
                 El primer documento vivo de Gwendal sobre un escenario. La formación incluye a François Ovide en guitarra
                 eléctrica, que aquí da un paso adelante y se convierte en una pieza clave. Bruno Barré toca tanto violín
                 acústico como eléctrico. Siete temas, cuarenta y dos minutos, y la demostración de que en directo el grupo
@@ -714,8 +724,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1983</span>
-              <h3 class="disc-name">Locomo</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d10_name">Locomo</h3>
+              <p class="disc-desc" data-i18n="disc.d10_desc">
                 Un punto de inflexión. Salen del núcleo estable Roger Schaub y Jean-Marie Renard; entra Robert Le Gall al
                 bajo y Patrice Guillaumat a la batería. François Ovide pasa a ser figura central. Bruno Barré y Youenn
                 continúan. Colaboran también Patrick Molard a la gaita y voces de Emmanuel Renard, Anne-Laure Poulain y
@@ -737,8 +747,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1985</span>
-              <h3 class="disc-name">Danse La Musique</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d11_name">Danse La Musique</h3>
+              <p class="disc-desc" data-i18n="disc.d11_desc">
                 Se consolida la nueva formación: Youenn Le Berre, Robert Le Gall —ahora también violinista y guitarrista
                 además de bajista—, Patrice Guillaumat, Bertrand Binet en guitarra y voz, y Patrick Tillman al violín.
                 Colabora Patrick Molard con las uilleann pipes. El único disco de Gwendal con un tema cantado, el que da
@@ -760,8 +770,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1989</span>
-              <h3 class="disc-name">Glen River</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d12_name">Glen River</h3>
+              <p class="disc-desc" data-i18n="disc.d12_desc">
                 La banda se reduce a cuarteto: Youenn Le Berre, Robert Le Gall, Patrice Guillaumat y Paul Faure a los
                 teclados. Menos músicos, más espacio. Catorce piezas y casi cincuenta minutos de música en los que el eje
                 creativo Le Berre–Le Gall define su sonido más propio. Uno de sus discos más personales y más cohesionados.
@@ -782,8 +792,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1994</span>
-              <h3 class="disc-name">Pan Ha Diskan</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d13_name">Pan Ha Diskan</h3>
+              <p class="disc-desc" data-i18n="disc.d13_desc">
                 El disco más experimental de su carrera. El núcleo es ahora una dupla: Youenn Le Berre y Robert Le Gall,
                 rodeados del percusionista africano Xavier Desandre-Navarre y un amplio círculo de colaboradores —Michel
                 Valy al bajo, Marc Hazon a la batería, François Ovide, Paul Faure, el músico tunecino Tahar Ben Mezoued—.
@@ -806,8 +816,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1996</span>
-              <h3 class="disc-name">Promo CD-Lo mejor de Gwendal</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d14_name">Promo CD-Lo mejor de Gwendal</h3>
+              <p class="disc-desc" data-i18n="disc.d14_desc">
                 Editado en España como CD promocional en estuche slim, con portada de Miguel Ángel Martín. Cuatro temas
                 clásicos del primer álbum, seleccionados para presentar al grupo ante un nuevo público en pleno auge del
                 interés por la música celta en España. Una muestra del cuidado con el que EMI y Chrysalis trataban el
@@ -829,8 +839,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1996</span>
-              <h3 class="disc-name">Promo CD-Medley Gwendal 1996</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d15_name">Promo CD-Medley Gwendal 1996</h3>
+              <p class="disc-desc" data-i18n="disc.d15_desc">
                 Segundo CD promocional español del mismo año, editado por Chrysalis. Tres temas en diferente orden y
                 selección respecto al anterior, pensado para una campaña de radio o distribución en puntos de venta
                 específicos. Junto al anterior, estos dos promos de 1996 son un testimonio directo de la presencia activa de
@@ -852,8 +862,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">1998</span>
-              <h3 class="disc-name">Aventures Celtiques, Recopilatorio</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d16_name">Aventures Celtiques, Recopilatorio</h3>
+              <p class="disc-desc" data-i18n="disc.d16_desc">
                 Una selección de dieciocho temas que recorre veinte años de historia. Desde Irish Jig hasta Pan Ha Diskan,
                 pasando por las etapas más bailables y las más experimentales. Una buena puerta de entrada para quien no los
                 conoce, y un repaso imprescindible para quien los sigue desde siempre.
@@ -873,8 +883,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">2005</span>
-              <h3 class="disc-name">War Raog</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d17_name">War Raog</h3>
+              <p class="disc-desc" data-i18n="disc.d17_desc">
                 Once años después de Pan Ha Diskan, Gwendal regresa al estudio con una formación completamente renovada:
                 Ludo Mesnil en guitarras, Pascal Sarton al bajo, David Rusaouen a la batería, Jérôme Guéguen a los teclados
                 y Jean-Claude Philippe al violín, junto a Youenn. Robert Le Gall y François Ovide regresan como invitados de
@@ -897,8 +907,8 @@
             </div>
             <div class="disc-info">
               <span class="disc-year">2016</span>
-              <h3 class="disc-name">Live in Getxo</h3>
-              <p class="disc-desc">
+              <h3 class="disc-name" data-i18n="disc.d18_name">Live in Getxo</h3>
+              <p class="disc-desc" data-i18n="disc.d18_desc">
                 Grabado en el prestigioso Festival de Jazz de Getxo, en el País Vasco. La formación moderna al completo:
                 Youenn Le Berre, Ludo Mesnil, Jérôme Gueguen, Vincent Leutreau al violín, David Rusaouen y Michel Valy al
                 bajo. Casi ochenta minutos de concierto que incluyen la Suite d'Arrée, los grandes temas de su historia y
@@ -912,8 +922,7 @@
         </div>
     
         <div class="disc-more reveal">
-          <p>La discografía completa incluye más de quince álbumes de estudio, directos y recopilaciones.<br />Consulta el
-            catálogo completo.</p>
+          <p data-i18n-html="disc.more">La discografía completa incluye más de quince álbumes de estudio, directos y recopilaciones.<br />Consulta el catálogo completo.</p>
         </div>
     
       </div>
@@ -926,10 +935,10 @@
       <div class="section-container">
 
         <div class="section-header reveal">
-          <span class="section-tag">Imágenes</span>
-          <h2 class="section-title" id="gal-title">Galería</h2>
+          <span class="section-tag" data-i18n="galeria.tag">Imágenes</span>
+          <h2 class="section-title" id="gal-title" data-i18n="galeria.title">Galería</h2>
           <div class="section-ornament" aria-hidden="true">⸻</div>
-          <p class="section-subtitle">Fotografías de conciertos e historia del grupo</p>
+          <p class="section-subtitle" data-i18n="galeria.subtitle">Fotografías de conciertos e historia del grupo</p>
         </div>
 
         <div class="gallery-grid reveal" role="list" aria-label="Galería de fotografías de Gwendal">
@@ -937,92 +946,92 @@
           
            <figure class="gallery-item" role="listitem">
              <img src="assets/img/gallery-01.webp" alt="Los primeros conciertos en los años 70" loading="lazy" />
-             <figcaption class="gal-caption">Los primeros conciertos en los años 70</figcaption>
+             <figcaption class="gal-caption" data-i18n="galeria.cap01">Los primeros conciertos en los años 70</figcaption>
             </figure>
 
            <figure class="gallery-item" role="listitem">
              <img src="assets/img/gallery-02.webp" alt="Imagen de los primeros miembros del grupo" loading="lazy" />
-             <figcaption class="gal-caption">Imagen de los primeros miembros del grupo</figcaption>
+             <figcaption class="gal-caption" data-i18n="galeria.cap02">Imagen de los primeros miembros del grupo</figcaption>
             </figure>
 
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-03.webp" alt="Imagen promocional en los principios de la década de los 2000" loading="lazy" />
-            <figcaption class="gal-caption">Imagen promocional en los principios de la década de los 2000</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap03">Imagen promocional en los principios de la década de los 2000</figcaption>
           </figure>
 
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-04.webp" alt="El grupo en los principios de la década de los 2000" loading="lazy" />
-            <figcaption class="gal-caption">El grupo en los principios de la década de los 2000</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap04">El grupo en los principios de la década de los 2000</figcaption>
           </figure>
 
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-05.webp" alt="El grupo en los principios de la década de los 2000" loading="lazy" />
-            <figcaption class="gal-caption">El grupo en los principios de la década de los 2000</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap05">El grupo en los principios de la década de los 2000</figcaption>
           </figure>
 
           <figure class="gallery-item gal-wide" role="listitem">
             <img src="assets/img/gallery-06.webp" alt="El grupo en los principios de la década de los 2000" loading="lazy" />
-            <figcaption class="gal-caption">El grupo en los principios de la década de los 2000</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap06">El grupo en los principios de la década de los 2000</figcaption>
           </figure>
 
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-07.webp" alt="El grupo en los principios de la década de los 2000" loading="lazy" />
-            <figcaption class="gal-caption">El grupo en los principios de la década de los 2000</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap07">El grupo en los principios de la década de los 2000</figcaption>
           </figure>
 
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-08.webp" alt="Youenn Le Berre en concierto" loading="lazy" />
-            <figcaption class="gal-caption">Youenn Le Berre en concierto</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap08">Youenn Le Berre en concierto</figcaption>
           </figure>
 
           <figure class="gallery-item gal-wide" role="listitem">
             <img src="assets/img/gallery-10.webp" alt="Vincent en concierto" loading="lazy" />
-            <figcaption class="gal-caption">Vincent en concierto</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap09">Vincent en concierto</figcaption>
           </figure>
 
            <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-09.webp" alt="Ludo en concierto" loading="lazy" />
-            <figcaption class="gal-caption">Ludo en concierto</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap10">Ludo en concierto</figcaption>
           </figure>
 
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-11.webp" alt="David en concierto" loading="lazy" />
-            <figcaption class="gal-caption">David en concierto</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap11">David en concierto</figcaption>
           </figure>
 
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-12.webp" alt="Gerome en concierto" loading="lazy" />
-            <figcaption class="gal-caption">Gerome en concierto</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap12">Gerome en concierto</figcaption>
           </figure>
 
           <figure class="gallery-item" role="listitem">
            <img src="assets/img/gallery-13.webp" alt="Michele en concierto" loading="lazy" />
-            <figcaption class="gal-caption">Michele en concierto</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap13">Michele en concierto</figcaption>
           </figure>
 
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-17.webp" alt="Sintonia entre Youenn y Michele" loading="lazy" />
-            <figcaption class="gal-caption">Sintonia entre Youenn y Michele</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap14">Sintonia entre Youenn y Michele</figcaption>
           </figure>
 
          <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery-14.webp" alt="Selfie del grupo al final del concierto" loading="lazy" />
-            <figcaption class="gal-caption">Selfie del grupo al final del concierto</figcaption>
+            <figcaption class="gal-caption" data-i18n="galeria.cap15">Selfie del grupo al final del concierto</figcaption>
          </figure>
 
         <figure class="gallery-item gal-wide" role="listitem">
           <img src="assets/img/gallery-15.webp" alt="Gwendal en plena actuación" loading="lazy" />
-          <figcaption class="gal-caption">Gwendal en plena actuación</figcaption>
+          <figcaption class="gal-caption" data-i18n="galeria.cap16">Gwendal en plena actuación</figcaption>
         </figure>
 
         <figure class="gallery-item" role="listitem">
           <img src="assets/img/gallery-16.webp" alt="David, batería del grupo" loading="lazy" />
-          <figcaption class="gal-caption">David, batería del grupo</figcaption>
+          <figcaption class="gal-caption" data-i18n="galeria.cap17">David, batería del grupo</figcaption>
         </figure>
 
         </div>
 
-        <p class="gallery-note reveal">
+        <p class="gallery-note reveal" data-i18n-html="galeria.note">
           Todas las fotografías pertenecen al archivo oficial del grupo y a Jose Morales jmlfoto.<br />
           Reservados todos los derechos.
         </p>
@@ -1039,8 +1048,8 @@
       <div class="section-container">
 
         <div class="section-header reveal">
-          <span class="section-tag section-tag-light">Próximo lanzamiento</span>
-          <h2 class="section-title section-title-light" id="libro-title">El Libro</h2>
+          <span class="section-tag section-tag-light" data-i18n="libro.tag">Próximo lanzamiento</span>
+          <h2 class="section-title section-title-light" id="libro-title" data-i18n="libro.title">El Libro</h2>
           <div class="section-ornament section-ornament-gold" aria-hidden="true">⸻</div>
         </div>
 
@@ -1057,17 +1066,17 @@
               <div class="libro-cover-shadow" aria-hidden="true"></div>
             </div>
             <div class="libro-launch-badge reveal" aria-label="Fecha de lanzamiento">
-              <span class="badge-label">Lanzamiento</span>
+              <span class="badge-label" data-i18n="libro.badge">Lanzamiento</span>
               <span class="badge-date">2027</span>
             </div>
           </div>
 
           <div class="libro-info-col reveal reveal-right">
-            <h3 class="libro-info-title">Un testimonio visual único de cincuenta años de historia</h3>
-            <p class="libro-info-lead">
+            <h3 class="libro-info-title" data-i18n="libro.h3">Un testimonio visual único de cincuenta años de historia</h3>
+            <p class="libro-info-lead" data-i18n="libro.lead">
               Durante más de una década, el fotógrafo Jose Morales ha acompañado al grupo en cada gira, cada concierto, cada ensayo y cada momento irrepetible. Este libro es el resultado de ese privilegio.
             </p>
-            <p class="libro-info-body">
+            <p class="libro-info-body" data-i18n="libro.body">
               Más de doscientas fotografías inéditas. Entrevistas con los miembros del grupo. Textos que recuperan la historia desde el nacimiento de la banda en Bretaña hasta sus conciertos más recientes. Un documento que cualquier amante de la música celta querrá tener.
             </p>
 
@@ -1075,36 +1084,36 @@
               <div class="libro-feature">
                 <span class="feature-icon" aria-hidden="true">◈</span>
                 <div>
-                  <strong>+200 fotografías</strong>
-                  <span>Inéditas y del archivo histórico</span>
+                  <strong data-i18n="libro.f1_title">+200 fotografías</strong>
+                  <span data-i18n="libro.f1_desc">Inéditas y del archivo histórico</span>
                 </div>
               </div>
               <div class="libro-feature">
                 <span class="feature-icon" aria-hidden="true">◈</span>
                 <div>
-                  <strong>Edición limitada</strong>
-                  <span>Numerada y firmada por el autor</span>
+                  <strong data-i18n="libro.f2_title">Edición limitada</strong>
+                  <span data-i18n="libro.f2_desc">Numerada y firmada por el autor</span>
                 </div>
               </div>
               <div class="libro-feature">
                 <span class="feature-icon" aria-hidden="true">◈</span>
                 <div>
-                  <strong>Texto en español y francés</strong>
-                  <span>Para los dos países que más amaron a Gwendal</span>
+                  <strong data-i18n="libro.f3_title">Texto en español y francés</strong>
+                  <span data-i18n="libro.f3_desc">Para los dos países que más amaron a Gwendal</span>
                 </div>
               </div>
               <div class="libro-feature">
                 <span class="feature-icon" aria-hidden="true">◈</span>
                 <div>
-                  <strong>Tapa dura premium</strong>
-                  <span>Diseño editorial de alta calidad</span>
+                  <strong data-i18n="libro.f4_title">Tapa dura premium</strong>
+                  <span data-i18n="libro.f4_desc">Diseño editorial de alta calidad</span>
                 </div>
               </div>
             </div>
 
             <!-- Formulario de aviso de lanzamiento -->
             <div class="libro-form-wrap">
-              <h4 class="libro-form-title">Recibe un aviso cuando esté disponible</h4>
+              <h4 class="libro-form-title" data-i18n="libro.form_title">Recibe un aviso cuando esté disponible</h4>
                 <form class="libro-form" id="libro-form"
                       action="https://formspree.io/f/maqzyzdg"
                       method="POST"
@@ -1115,24 +1124,24 @@
                       <div class="form-row">
 
                   <div class="form-group">
-                    <label for="libro-nombre">Nombre</label>
-                    <input type="text" id="libro-nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required />
+                    <label for="libro-nombre" data-i18n="libro.f_nombre">Nombre</label>
+                    <input type="text" id="libro-nombre" name="nombre" placeholder="Tu nombre" data-i18n-placeholder="libro.f_nombre_ph" data-i18n-placeholder="libro.f_nombre_ph" autocomplete="given-name" required />
                   </div>
                   <div class="form-group">
-                    <label for="libro-email">Email</label>
+                    <label for="libro-email" data-i18n="libro.f_email">Email</label>
                     <input type="email" id="libro-email" name="email" placeholder="tu@email.com" autocomplete="email" required />
                   </div>
                 </div>
                 <div class="form-check">
                   <input type="checkbox" id="libro-consent" name="consent" required />
-                  <label for="libro-consent">Acepto recibir comunicaciones sobre el libro y Gwendal</label>
+                  <label for="libro-consent" data-i18n="libro.f_consent">Acepto recibir comunicaciones sobre el libro y Gwendal</label>
                 </div>
                 <button type="submit" class="btn btn-primary btn-full">
                   <span class="btn-icon">◈</span>
-                  Avísame del Lanzamiento
+                  <span data-i18n="libro.f_submit">Avísame del Lanzamiento</span>
                 </button>
                 <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
-                  ✓ Perfecto. Te avisaremos cuando el libro esté disponible.
+                  <span data-i18n="libro.f_success"><span data-i18n="libro.f_success">✓ Perfecto. Te avisaremos cuando el libro esté disponible.</span></span>
                 </div>
               </form>
             </div>
@@ -1150,8 +1159,8 @@
       <div class="section-container">
 
         <div class="section-header reveal">
-          <span class="section-tag">Cronología</span>
-          <h2 class="section-title" id="tl-title">Cincuenta Años<br /><em>de Historia</em></h2>
+          <span class="section-tag" data-i18n="tl.tag">Cronología</span>
+          <h2 class="section-title" id="tl-title" data-i18n-html="tl.title">Cincuenta Años<br /><em>de Historia</em></h2>
           <div class="section-ornament" aria-hidden="true">⸻</div>
         </div>
 
@@ -1160,8 +1169,8 @@
           <article class="tl-item tl-left reveal" role="listitem" tabindex="0">
             <div class="tl-content">
               <span class="tl-year">1972</span>
-              <h3 class="tl-title">El comienzo</h3>
-              <p>Formación del grupo en Bretaña. Un puñado de músicos con flauta, saxo, violín, guitarra y una visión: llevar la música de su tierra al mundo.</p>
+              <h3 class="tl-title" data-i18n="tl.y1972_title">El comienzo</h3>
+              <p data-i18n-html="tl.y1972_p">Formación del grupo en Bretaña. Un puñado de músicos con flauta, saxo, violín, guitarra y una visión: llevar la música de su tierra al mundo.</p>
             </div>
             <div class="tl-dot" aria-hidden="true"></div>
           </article>
@@ -1170,16 +1179,16 @@
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-content">
               <span class="tl-year">1974</span>
-              <h3 class="tl-title">Irish Jig: el disco que lo cambió todo</h3>
-              <p>Publicación de su debut discográfico, <em>Irish Jig</em>, una obra que irrumpió en el mercado europeo con una energía desconocida hasta entonces. La música celta bretona encontraba por primera vez su voz en el vinilo, fusionando tradición, rock y jazz en un sonido propio e inconfundible. Cincuenta años después, el disco sería celebrado como hito fundacional de la música celta europea.</p>
+              <h3 class="tl-title" data-i18n="tl.y1974_title">Irish Jig: el disco que lo cambió todo</h3>
+              <p data-i18n-html="tl.y1974_p">Publicación de su debut discográfico, <em>Irish Jig</em>, una obra que irrumpió en el mercado europeo con una energía desconocida hasta entonces. La música celta bretona encontraba por primera vez su voz en el vinilo, fusionando tradición, rock y jazz en un sonido propio e inconfundible. Cincuenta años después, el disco sería celebrado como hito fundacional de la música celta europea.</p>
             </div>
           </article>
 
           <article class="tl-item tl-left reveal" role="listitem" tabindex="0">
             <div class="tl-content">
               <span class="tl-year">1981</span>
-              <h3 class="tl-title">Primer álbum en vivo en España</h3>
-              <p>La consagración en el Colegio Mayor San Juan Evangelista de Madrid. En el mítico "Johnny" de la ciudad universitaria grabaron su primer disco en directo, un momento crucial que los consolidó como banda de culto en el epicentro de la cultura universitaria y progresiva de la capital española.</p>
+              <h3 class="tl-title" data-i18n="tl.y1981_title">Primer álbum en vivo en España</h3>
+              <p data-i18n-html="tl.y1981_p">La consagración en el Colegio Mayor San Juan Evangelista de Madrid. En el mítico "Johnny" de la ciudad universitaria grabaron su primer disco en directo, un momento crucial que los consolidó como banda de culto en el epicentro de la cultura universitaria y progresiva de la capital española.</p>
             </div>
             <div class="tl-dot" aria-hidden="true"></div>
           </article>
@@ -1188,16 +1197,16 @@
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-content">
               <span class="tl-year">1982</span>
-              <h3 class="tl-title">España y el Atlántico</h3>
-              <p>Primeras grandes giras por España. El público español los adopta con una pasión que marcará para siempre la relación del grupo con el país.</p>
+              <h3 class="tl-title" data-i18n="tl.y1982_title">España y el Atlántico</h3>
+              <p data-i18n-html="tl.y1982_p">Primeras grandes giras por España. El público español los adopta con una pasión que marcará para siempre la relación del grupo con el país.</p>
             </div>
           </article>
 
           <article class="tl-item tl-left reveal" role="listitem" tabindex="0">
             <div class="tl-content">
               <span class="tl-year">1990s</span>
-              <h3 class="tl-title">Consolidación</h3>
-              <p>Dos décadas en escena y siguen llenando salas. Nuevos integrantes, nuevas colaboraciones, pero el alma celta permanece intacta.</p>
+              <h3 class="tl-title" data-i18n="tl.y1990_title">Consolidación</h3>
+              <p data-i18n-html="tl.y1990_p">Dos décadas en escena y siguen llenando salas. Nuevos integrantes, nuevas colaboraciones, pero el alma celta permanece intacta.</p>
             </div>
             <div class="tl-dot" aria-hidden="true"></div>
           </article>
@@ -1206,16 +1215,16 @@
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-content">
               <span class="tl-year">2000s</span>
-              <h3 class="tl-title">Nuevo siglo</h3>
-              <p>La era digital trae nuevas audiencias. Gwendal adapta su música sin perder su esencia y encuentra seguidores en todo el mundo.</p>
+              <h3 class="tl-title" data-i18n="tl.y2000_title">Nuevo siglo</h3>
+              <p data-i18n-html="tl.y2000_p">La era digital trae nuevas audiencias. Gwendal adapta su música sin perder su esencia y encuentra seguidores en todo el mundo.</p>
             </div>
           </article>
 
           <article class="tl-item tl-left reveal" role="listitem" tabindex="0">
             <div class="tl-content">
               <span class="tl-year">2014</span>
-              <h3 class="tl-title">El fotógrafo</h3>
-              <p>Comienza la colaboración con Jose Morales "jmlfoto". Una mirada privilegiada que durante más de una década documenta cada momento del grupo.</p>
+              <h3 class="tl-title" data-i18n="tl.y2014_title">El fotógrafo</h3>
+              <p data-i18n-html="tl.y2014_p">Comienza la colaboración con Jose Morales "jmlfoto". Una mirada privilegiada que durante más de una década documenta cada momento del grupo.</p>
             </div>
             <div class="tl-dot" aria-hidden="true"></div>
           </article>
@@ -1224,16 +1233,16 @@
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-content">
               <span class="tl-year">2024</span>
-              <h3 class="tl-title">50 aniversario de Irish Jig</h3>
-              <p>Medio siglo desde la publicación del disco que lo cambió todo. <em>Irish Jig</em> (1974) fue el punto de partida de una aventura musical que fusionó la tradición celta bretona con el rock y el jazz, y que acabaría conquistando escenarios de toda Europa. Una efeméride que el grupo celebra con la misma energía del primer día.</p>
+              <h3 class="tl-title" data-i18n="tl.y2024_title">50 aniversario de Irish Jig</h3>
+              <p data-i18n-html="tl.y2024_p">Medio siglo desde la publicación del disco que lo cambió todo. <em>Irish Jig</em> (1974) fue el punto de partida de una aventura musical que fusionó la tradición celta bretona con el rock y el jazz, y que acabaría conquistando escenarios de toda Europa. Una efeméride que el grupo celebra con la misma energía del primer día.</p>
             </div>
           </article>
 
           <article class="tl-item tl-left reveal" role="listitem" tabindex="0">
             <div class="tl-content">
               <span class="tl-year">2026</span>
-              <h3 class="tl-title">El Libro</h3>
-              <p>Se empieza a fraguar la idea de la edición de un libro conmemorativo. Más de cincuenta años de historia en imágenes y recuerdos. El testimonio visual definitivo de una de las bandas más importantes de la música celta europea.</p>
+              <h3 class="tl-title" data-i18n="tl.y2026_title">El Libro</h3>
+              <p data-i18n-html="tl.y2026_p">Se empieza a fraguar la idea de la edición de un libro conmemorativo. Más de cincuenta años de historia en imágenes y recuerdos. El testimonio visual definitivo de una de las bandas más importantes de la música celta europea.</p>
             </div>
             <div class="tl-dot" aria-hidden="true"></div>
           </article>
@@ -1250,8 +1259,8 @@
       <div class="section-container">
 
         <div class="section-header reveal">
-          <span class="section-tag">Voces</span>
-          <h2 class="section-title" id="test-title">Lo que dicen</h2>
+          <span class="section-tag" data-i18n="test.tag">Voces</span>
+          <h2 class="section-title" id="test-title" data-i18n="test.title">Lo que dicen</h2>
           <div class="section-ornament" aria-hidden="true">⸻</div>
         </div>
 
@@ -1309,7 +1318,7 @@
             <div class="testimonio-quote" aria-hidden="true">❝</div>
             <p>Los descubrí en un festival hace más de veinte años y no he dejado de seguirlos desde entonces. Cada concierto es distinto, pero esa fuerza en directo nunca cambia.</p>
             <footer>
-              — Seguidor de Gwendal desde los años 2000
+              <span data-i18n="test.fan_footer"><span data-i18n="test.fan_footer">— Seguidor de Gwendal desde los años 2000</span></span>
             </footer>
           </blockquote>
 
@@ -1325,8 +1334,8 @@
   <div class="section-container">
 
     <div class="section-header reveal">
-      <span class="section-tag">Actualidad</span>
-      <h2 class="section-title" id="news-title">Noticias</h2>
+      <span class="section-tag" data-i18n="news.tag">Actualidad</span>
+      <h2 class="section-title" id="news-title" data-i18n="news.title">Noticias</h2>
       <div class="section-ornament" aria-hidden="true">⸻</div>
     </div>
 
@@ -1338,11 +1347,11 @@
           <span>✦</span>
         </div>
         <div class="noticia-body">
-          <span class="noticia-tag">Hemeroteca</span>
+          <span class="noticia-tag" data-i18n="news.tag_hem">Hemeroteca</span>
           <time class="noticia-date" datetime="1979-05-29">Mayo 1979</time>
-          <h3 class="noticia-title">El País descubre a Gwendal en sus páginas de Cultura</h3>
-          <p class="noticia-excerpt">En mayo de 1979, con apenas tres años de vida, el diario El País dedicó un espacio en su sección de Cultura al grupo bretón, documento de una época en que Gwendal comenzaba a conquistar al público español.</p>
-          <a href="https://elpais.com/diario/1979/05/29/cultura/296776812_850215.html" class="noticia-link" target="_blank" rel="noopener noreferrer">Ver en hemeroteca →</a>
+          <h3 class="noticia-title" data-i18n="news.n01_title">El País descubre a Gwendal en sus páginas de Cultura</h3>
+          <p class="noticia-excerpt" data-i18n="news.n01_exc">En mayo de 1979, con apenas tres años de vida, el diario El País dedicó un espacio en su sección de Cultura al grupo bretón, documento de una época en que Gwendal comenzaba a conquistar al público español.</p>
+          <a href="https://elpais.com/diario/1979/05/29/cultura/296776812_850215.html" class="noticia-link" target="_blank" rel="noopener noreferrer" data-i18n="news.n01_link" data-i18n="news.n02_link" data-i18n="news.n01_link" data-i18n="news.n02_link">Ver en hemeroteca →</a>
         </div>
       </article>
 
@@ -1352,10 +1361,10 @@
           <span>♪</span>
         </div>
         <div class="noticia-body">
-          <span class="noticia-tag">Hemeroteca</span>
+          <span class="noticia-tag" data-i18n="news.tag_hem">Hemeroteca</span>
           <time class="noticia-date" datetime="1983-07-20">Julio 1983</time>
-          <h3 class="noticia-title">Gwendal toca para los presos de Carabanchel</h3>
-          <p class="noticia-excerpt">El País recogió el insólito concierto que el grupo bretón ofreció en la prisión madrileña de Carabanchel ante cerca de 900 reclusos, en señal de solidaridad y dentro de su gira española de 1983.</p>
+          <h3 class="noticia-title" data-i18n="news.n02_title">Gwendal toca para los presos de Carabanchel</h3>
+          <p class="noticia-excerpt" data-i18n="news.n02_exc">El País recogió el insólito concierto que el grupo bretón ofreció en la prisión madrileña de Carabanchel ante cerca de 900 reclusos, en señal de solidaridad y dentro de su gira española de 1983.</p>
           <a href="https://elpais.com/diario/1983/07/20/madrid/427548256_850215.html" class="noticia-link" target="_blank" rel="noopener noreferrer">Ver en hemeroteca →</a>
         </div>
       </article>
@@ -1366,11 +1375,11 @@
           <span>◈</span>
         </div>
         <div class="noticia-body">
-          <span class="noticia-tag">Aniversario</span>
+          <span class="noticia-tag" data-i18n="news.tag_aniv">Aniversario</span>
           <time class="noticia-date" datetime="2018-06-30">Junio 2018</time>
-          <h3 class="noticia-title">Gwendal celebra 45 años sobre los escenarios</h3>
-          <p class="noticia-excerpt">Los Sonidos del Planeta Azul repasa la trayectoria del grupo bretón en su 45 aniversario, destacando el vínculo único que Gwendal mantiene con el público español desde 1975.</p>
-          <a href="https://www.lossonidosdelplanetaazul.com/2018/06/gwendal-celebra-45-anos-sobre-los-escenarios/" class="noticia-link" target="_blank" rel="noopener noreferrer">Leer más →</a>
+          <h3 class="noticia-title" data-i18n="news.n03_title">Gwendal celebra 45 años sobre los escenarios</h3>
+          <p class="noticia-excerpt" data-i18n="news.n03_exc">Los Sonidos del Planeta Azul repasa la trayectoria del grupo bretón en su 45 aniversario, destacando el vínculo único que Gwendal mantiene con el público español desde 1975.</p>
+          <a href="https://www.lossonidosdelplanetaazul.com/2018/06/gwendal-celebra-45-anos-sobre-los-escenarios/" class="noticia-link" target="_blank" rel="noopener noreferrer" data-i18n="news.n03_link" data-i18n="news.n04_link" data-i18n="news.n05_link" data-i18n="news.n06_link" data-i18n="news.n03_link" data-i18n="news.n04_link" data-i18n="news.n05_link" data-i18n="news.n06_link">Leer más →</a>
         </div>
       </article>
 
@@ -1380,10 +1389,10 @@
           <span>♪</span>
         </div>
         <div class="noticia-body">
-          <span class="noticia-tag">Conciertos</span>
+          <span class="noticia-tag" data-i18n="news.tag_conc">Conciertos</span>
           <time class="noticia-date" datetime="2019-07-11">Julio 2019</time>
-          <h3 class="noticia-title">Los bretones Gwendal abren el Festival de Ortigueira</h3>
-          <p class="noticia-excerpt">La Voz de Galicia recoge la actuación de Gwendal como cabeza de cartel en el Festival de Ortigueira, uno de los grandes encuentros de música celta de Europa.</p>
+          <h3 class="noticia-title" data-i18n="news.n04_title">Los bretones Gwendal abren el Festival de Ortigueira</h3>
+          <p class="noticia-excerpt" data-i18n="news.n04_exc">La Voz de Galicia recoge la actuación de Gwendal como cabeza de cartel en el Festival de Ortigueira, uno de los grandes encuentros de música celta de Europa.</p>
           <a href="https://www.lavozdegalicia.es/noticia/cultura/2019/07/11/bretones-gwendal-abren-hoy-festival-ortigueira-territorio-folkie/0003_201907G11P37994.htm" class="noticia-link" target="_blank" rel="noopener noreferrer">Leer más →</a>
         </div>
       </article>
@@ -1394,10 +1403,10 @@
           <span>◈</span>
         </div>
         <div class="noticia-body">
-          <span class="noticia-tag">Prensa</span>
+          <span class="noticia-tag" data-i18n="news.tag_prensa">Prensa</span>
           <time class="noticia-date" datetime="2025-07-07">Julio 2025</time>
           <h3 class="noticia-title">Youenn Le Berre repasa la historia de Gwendal y su vínculo con España</h3>
-          <p class="noticia-excerpt">El cofundador del grupo recuerda la acogida del público español y la larga trayectoria de Gwendal antes de su actuación en Ortigueira.</p>
+          <p class="noticia-excerpt" data-i18n="news.n05_exc">El cofundador del grupo recuerda la acogida del público español y la larga trayectoria de Gwendal antes de su actuación en Ortigueira.</p>
           <a href="https://www.elprogreso.es/articulo/cultura/publico-espanol-siempre-nos-recibio-muy-nos-pide-mismo-marcha-marcha/202507072035211893552.html" class="noticia-link" target="_blank" rel="noopener noreferrer">Leer más →</a>
         </div>
       </article>
@@ -1408,10 +1417,10 @@
           <span>◈</span>
         </div>
         <div class="noticia-body">
-          <span class="noticia-tag">Libro</span>
+          <span class="noticia-tag" data-i18n="news.tag_libro">Libro</span>
           <time class="noticia-date" datetime="2026-01-01">Enero 2026</time>
-          <h3 class="noticia-title">El libro oficial de Gwendal confirma su lanzamiento para 2027</h3>
-          <p class="noticia-excerpt">Más de una década de trabajo fotográfico y documental se convertirá en una obra editorial única sobre la historia del grupo bretón, con publicación confirmada para 2027.</p>
+          <h3 class="noticia-title" data-i18n="news.n06_title">El libro oficial de Gwendal confirma su lanzamiento para 2027</h3>
+          <p class="noticia-excerpt" data-i18n="news.n06_exc">Más de una década de trabajo fotográfico y documental se convertirá en una obra editorial única sobre la historia del grupo bretón, con publicación confirmada para 2027.</p>
           <a href="#libro" class="noticia-link">Leer más →</a>
         </div>
       </article>
@@ -1428,19 +1437,19 @@
   <div class="section-container">
 
     <div class="section-header reveal">
-      <span class="section-tag">Contacto</span>
-      <h2 class="section-title" id="contact-title">Conecta con<br /><em>Gwendal</em></h2>
+      <span class="section-tag" data-i18n="contacto.tag">Contacto</span>
+      <h2 class="section-title" id="contact-title" data-i18n-html="contacto.title">Conecta con<br /><em>Gwendal</em></h2>
       <div class="section-ornament" aria-hidden="true">⸻</div>
     </div>
 
     <div class="contacto-grid">
 
       <div class="contacto-info reveal reveal-left">
-        <h3 class="contacto-info-title">Redes y contacto directo</h3>
+        <h3 class="contacto-info-title" data-i18n="contacto.info_title">Redes y contacto directo</h3>
 
         <!-- Contacto profesional / Management — primero -->
         <div class="contacto-management">
-          <h4 class="management-title">Contratación · Prensa · Giras</h4>
+          <h4 class="management-title" data-i18n="contacto.mgmt_title">Contratación · Prensa · Giras</h4>
           <div class="management-card">
             <div class="management-info">
               <span class="management-name">Marcos Valles</span>
@@ -1471,7 +1480,7 @@
 
         <!-- Redes sociales — después -->
         <hr class="contacto-divider" aria-hidden="true">
-        <p class="contacto-redes-intro">Para cualquier consulta, colaboraciones o simplemente para saludar.</p>
+        <p class="contacto-redes-intro" data-i18n="contacto.redes_intro">Para cualquier consulta, colaboraciones o simplemente para saludar.</p>
 
         <div class="social-links" role="list" aria-label="Redes sociales de Gwendal">
           <a href="https://facebook.com/gwendalcelticfolk" target="_blank" class="social-link" role="listitem" aria-label="Facebook de Gwendal" rel="noopener">
@@ -1500,36 +1509,36 @@
             method="POST"
             novalidate
             aria-label="Formulario de contacto">
-          <h3 class="form-title">Envíanos un mensaje</h3>
+          <h3 class="form-title" data-i18n="contacto.form_title">Envíanos un mensaje</h3>
           <div class="form-group">
-            <label for="c-nombre">Nombre</label>
-            <input type="text" id="c-nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" required />
+            <label for="c-nombre" data-i18n="contacto.c_nombre">Nombre</label>
+            <input type="text" id="c-nombre" name="nombre" placeholder="Tu nombre completo" data-i18n-placeholder="contacto.c_nombre_ph" data-i18n-placeholder="contacto.c_nombre_ph" autocomplete="name" required />
           </div>
           <div class="form-group">
-            <label for="c-email">Email</label>
+            <label for="c-email" data-i18n="contacto.c_email">Email</label>
             <input type="email" id="c-email" name="email" placeholder="tu@email.com" autocomplete="email" required />
           </div>
           <div class="form-group">
-            <label for="c-asunto">Asunto</label>
+            <label for="c-asunto" data-i18n="contacto.c_asunto">Asunto</label>
             <select id="c-asunto" name="asunto" required>
-              <option value="">Selecciona un asunto</option>
-              <option value="libro">El libro</option>
-              <option value="conciertos">Conciertos</option>
-              <option value="prensa">Prensa</option>
-              <option value="colaboracion">Colaboración</option>
-              <option value="otro">Otro</option>
+              <option value="" data-i18n="contacto.c_asunto_0">Selecciona un asunto</option>
+              <option value="libro" data-i18n="contacto.c_asunto_l">El libro</option>
+              <option value="conciertos" data-i18n="contacto.c_asunto_c">Conciertos</option>
+              <option value="prensa" data-i18n="contacto.c_asunto_p">Prensa</option>
+              <option value="colaboracion" data-i18n="contacto.c_asunto_co">Colaboración</option>
+              <option value="otro" data-i18n="contacto.c_asunto_o">Otro</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="c-mensaje">Mensaje</label>
-            <textarea id="c-mensaje" name="mensaje" rows="5" placeholder="Escríbenos aquí..." required></textarea>
+            <label for="c-mensaje" data-i18n="contacto.c_mensaje">Mensaje</label>
+            <textarea id="c-mensaje" name="mensaje" rows="5" placeholder="Escríbenos aquí..." data-i18n-placeholder="contacto.c_mensaje_ph" data-i18n-placeholder="contacto.c_mensaje_ph" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full">
             <span class="btn-icon">◈</span>
-            Enviar Mensaje
+            <span data-i18n="contacto.c_submit">Enviar Mensaje</span>
           </button>
           <div class="form-success" id="contact-success" role="alert" aria-live="polite" hidden>
-            ✓ Mensaje enviado. Nos pondremos en contacto contigo pronto.
+            <span data-i18n="contacto.c_success"><span data-i18n="contacto.c_success">✓ Mensaje enviado. Nos pondremos en contacto contigo pronto.</span></span>
           </div>
         </form>
       </div>
@@ -1547,40 +1556,33 @@
 
       <div class="footer-brand">
         <span class="footer-logo">GWENDAL</span>
-        <span class="footer-tagline">Musique Celtique · Bretagne · Desde 1972</span>
+        <span class="footer-tagline" data-i18n="footer.tagline">Musique Celtique · Bretagne · Desde 1972</span>
       </div>
 
-      <nav class="footer-nav" aria-label="Navegación del pie de página">
-        <a href="#sobre">Historia</a>
-        <a href="#discografia">Discografía</a>
-        <a href="#galeria">Galería</a>
-        <a href="#libro">El Libro</a>
-        <a href="#timeline">Cronología</a>
-        <a href="#contacto">Contacto</a>
+      <nav class="footer-nav" aria-label="Navegación del pie de página" data-i18n-aria="nav.footer_aria" data-i18n-aria="nav.footer_aria">
+        <a href="#sobre" data-i18n="footer.nav_hist">Historia</a>
+        <a href="#discografia" data-i18n="footer.nav_disc">Discografía</a>
+        <a href="#galeria" data-i18n="footer.nav_gal">Galería</a>
+        <a href="#libro" data-i18n="footer.nav_libro">El Libro</a>
+        <a href="#timeline" data-i18n="footer.nav_tl">Cronología</a>
+        <a href="#contacto" data-i18n="footer.nav_cont">Contacto</a>
       </nav>
 
       <div class="footer-legal">
-        <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
+        <a href="privacidad.html" target="_blank" rel="noopener noreferrer" data-i18n="footer.privacidad" data-i18n="footer.privacidad">Política de privacidad</a>
         <span aria-hidden="true">·</span>
-        <a href="aviso-legal.html" target="_blank" rel="noopener noreferrer">Aviso legal</a>
+        <a href="aviso-legal.html" target="_blank" rel="noopener noreferrer" data-i18n="footer.aviso" data-i18n="footer.aviso">Aviso legal</a>
         <span aria-hidden="true">·</span>
-        <a href="cookies.html" target="_blank" rel="noopener noreferrer">Cookies</a>
+        <a href="cookies.html" target="_blank" rel="noopener noreferrer" data-i18n="footer.cookies" data-i18n="footer.cookies">Cookies</a>
       </div>
 
       <div class="footer-copy">
-        <p>© 2026 Jose Morales · jmlfoto. Todos los derechos reservados.</p>
-        <p class="footer-disclaimer">
-          Sitio web no oficial creado por el fotógrafo del grupo.
-          No representa a Gwendal ni a su management.
-        </p>
-        <p class="footer-photo-credit">
-          Fotografías: © Jose Morales · y archivo del grupo.
+        <p data-i18n="footer.copy">© 2026 Jose Morales · jmlfoto. Todos los derechos reservados.</p>
+        <p class="footer-disclaimer" data-i18n="footer.disclaimer">Sitio web no oficial creado por el fotógrafo del grupo. No representa a Gwendal ni a su management.</p>
+        <p class="footer-photo-credit"><span data-i18n="footer.photo">Fotografías: © Jose Morales · y archivo del grupo.</span>
           <a href="https://www.instagram.com/jmlfoto" target="_blank" rel="noopener noreferrer">jmlfoto</a>
         </p>
-          <p class="footer-management">
-            Management y representación:
-             <strong>Marcos Valles · Actos Management</strong> · Más de 20 años junto a Gwendal
-            </p>
+          <p class="footer-management" data-i18n-html="footer.mgmt">Management y representación: <strong>Marcos Valles · Actos Management</strong> · Más de 20 años junto a Gwendal</p>
       </div>
 
     </div>
@@ -1592,23 +1594,25 @@
   </footer>
 
   <!-- Back to top -->
-  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" hidden>
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" data-i18n-aria="footer.back_top_aria" data-i18n-aria="footer.back_top_aria" hidden>
     ↑
   </button>
 
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 
   <!-- ============================================================
      BANNER DE COOKIES
 ============================================================ -->
-<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Aviso de cookies" aria-live="polite">
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Aviso de cookies" data-i18n-aria="cookie.aria" aria-live="polite">
   <p class="cookie-text">
-    Este sitio utiliza cookies para mejorar tu experiencia. 
-    <a href="cookies.html" target="_blank" rel="noopener">Más información</a>
+    <span data-i18n="cookie.text"><span data-i18n="cookie.text">Este sitio utiliza cookies para mejorar tu experiencia.</span></span> 
+    <a href="cookies.html" target="_blank" rel="noopener" data-i18n="cookie.more" data-i18n="cookie.more">Más información</a>
   </p>
   <div class="cookie-actions">
-    <button class="cookie-btn-accept" id="cookie-accept">Aceptar</button>
-    <button class="cookie-btn-close" id="cookie-close" aria-label="Cerrar aviso de cookies">✕</button>
+    <button class="cookie-btn-accept" id="cookie-accept" data-i18n="cookie.accept">Aceptar</button>
+    <button class="cookie-btn-close" id="cookie-close" aria-label="Cerrar aviso de cookies" data-i18n-aria="cookie.close_aria" data-i18n-aria="cookie.close_aria">✕</button>
   </div>
 </div>
 
@@ -1629,7 +1633,7 @@
       class="disc-modal-close"
       id="disc-modal-close"
       type="button"
-      aria-label="Cerrar ficha del disco"
+      aria-label="Cerrar ficha del disco" data-i18n-aria="disc.modal_close_aria" data-i18n-aria="disc.modal_close_aria"
       data-disc-close
     >
       ✕
@@ -1652,7 +1656,7 @@
         <h3 class="disc-modal-title" id="disc-modal-title"></h3>
         <div class="disc-modal-text" id="disc-modal-text"></div>
         <div class="disc-modal-tracks" id="disc-modal-tracks" hidden>
-          <h4 class="disc-modal-tracks-title">Lista de temas</h4>
+          <h4 class="disc-modal-tracks-title" data-i18n="disc.modal_tracks">Lista de temas</h4>
           <ol class="disc-modal-tracklist" id="disc-modal-tracklist"></ol>
         </div>
       </div>
