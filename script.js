@@ -87,7 +87,8 @@ const initNav = () => {
 
     navLinks.forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
+      const section = link.getAttribute('data-section');
+      if (link.getAttribute('href') === `#${current}` || section === current) {
         link.classList.add('active');
       }
     });
@@ -200,8 +201,12 @@ const initDiscFilter = () => {
       const filter = btn.dataset.filter;
 
       // Estado activo
-      buttons.forEach(b => b.classList.remove('active'));
+      buttons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
 
       // Muestra/oculta con animación
       items.forEach(item => {
@@ -692,8 +697,8 @@ const initCounters = () => {
 
           if (text.includes('50+')) {
             animateValue(el, 0, 50, 1500, '+');
-          } else if (text.includes('20+')) {
-            animateValue(el, 0, 20, 1200, '+');
+          } else if (text.includes('15+')) {
+            animateValue(el, 0, 15, 1200, '+');
           }
 
           observer.unobserve(el);
@@ -713,22 +718,35 @@ const initTimeline = () => {
   const items = $$('.tl-item');
   if (!items.length) return;
 
-  items.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      const dot = item.querySelector('.tl-dot');
-      if (dot) {
-        dot.style.transform = 'scale(1.6)';
-        dot.style.boxShadow = '0 0 0 6px rgba(201,168,76,0.3), 0 0 30px rgba(201,168,76,0.6)';
-      }
-    });
+  const activateDot = (item) => {
+    const dot = item.querySelector('.tl-dot');
+    if (dot) {
+      dot.style.transform = 'scale(1.6)';
+      dot.style.boxShadow = '0 0 0 6px rgba(201,168,76,0.3), 0 0 30px rgba(201,168,76,0.6)';
+    }
+  };
 
-    item.addEventListener('mouseleave', () => {
-      const dot = item.querySelector('.tl-dot');
-      if (dot) {
-        dot.style.transform = '';
-        dot.style.boxShadow = '';
-      }
-    });
+  const deactivateDot = (item) => {
+    const dot = item.querySelector('.tl-dot');
+    if (dot) {
+      dot.style.transform = '';
+      dot.style.boxShadow = '';
+    }
+  };
+
+  items.forEach(item => {
+    // Ratón
+    item.addEventListener('mouseenter', () => activateDot(item));
+    item.addEventListener('mouseleave', () => deactivateDot(item));
+
+    // Teclado (tabindex="0" en el HTML hace estos elementos navegables)
+    item.addEventListener('focus', () => activateDot(item));
+    item.addEventListener('blur', () => deactivateDot(item));
+
+    // Táctil (móvil/tablet)
+    item.addEventListener('touchstart', () => activateDot(item), { passive: true });
+    item.addEventListener('touchend', () => deactivateDot(item));
+    item.addEventListener('touchcancel', () => deactivateDot(item));
   });
 };
 
