@@ -8,7 +8,7 @@ Sitio web dedicado al grupo bretón de música celta **Gwendal** y al próximo l
 
 ## Sobre el proyecto
 
-Este sitio es un **proyecto personal no oficial**, desarrollado por Jose Morales en su condición de fotógrafo habitual de Gwendal durante más de una década y autor del libro sobre la historia del grupo. No representa al grupo ni a su management (Actos Management · Marcos Valles).
+Este sitio es un **proyecto personal no oficial**, desarrollado por Jose Morales en su condición de fotógrafo habitual de Gwendal durante más de una década y autor del libro sobre la historia del grupo. No representa al grupo ni a su management (Actos Pro · Alan Valles).
 
 El sitio tiene dos objetivos principales:
 
@@ -132,8 +132,8 @@ Todas las páginas legales usan `noindex, follow` para excluirlas de resultados 
 ## Contacto y management
 
 **Gestión oficial de Gwendal (conciertos, prensa, contratación):**
-Marcos Valles · Actos Management
-📧 actosmanagement@gmail.com
+Alan Valles · Actos Pro
+📧 actospro@gmail.com
 📞 984 104 923
 🌐 actosmanagement.com
 

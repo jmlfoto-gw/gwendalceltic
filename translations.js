@@ -254,7 +254,7 @@ es: {
     copy:       '© 2026 Jose Morales · jmlfoto. Todos los derechos reservados.',
     disclaimer: 'Sitio web no oficial creado por el fotógrafo del grupo. No representa a Gwendal ni a su management.',
     photo:      'Fotografías: © Jose Morales · y archivo del grupo.',
-    mgmt:       'Management y representación: <strong>Marcos Valles · Actos Management</strong> · Más de 20 años junto a Gwendal',
+    mgmt:       'Management y representación: <strong>Alan Valles · Actos Pro</strong> · Más de 20 años junto a Gwendal',
     back_top_aria: 'Volver arriba'
   },
   cookie: {
@@ -520,7 +520,7 @@ fr: {
     copy:       '© 2026 Jose Morales · jmlfoto. Tous droits réservés.',
     disclaimer: "Site non officiel créé par le photographe du groupe. Il ne représente pas Gwendal ni son management.",
     photo:      'Photographies : © Jose Morales · et archives du groupe.',
-    mgmt:       'Management et représentation : <strong>Marcos Valles · Actos Management</strong> · Plus de 20 ans aux côtés de Gwendal',
+    mgmt:       'Management et représentation : <strong>Alan Valles · Actos Pro</strong> · Plus de 20 ans aux côtés de Gwendal',
     back_top_aria: 'Retour en haut'
   },
   cookie: {
@@ -786,7 +786,7 @@ en: {
     copy:       '© 2026 Jose Morales · jmlfoto. All rights reserved.',
     disclaimer: "Unofficial website created by the group's photographer. Does not represent Gwendal or its management.",
     photo:      'Photographs: © Jose Morales · and group archive.',
-    mgmt:       'Management and representation: <strong>Marcos Valles · Actos Management</strong> · Over 20 years with Gwendal',
+    mgmt:       'Management and representation: <strong>Alan Valles · Actos Pro</strong> · Over 20 years with Gwendal',
     back_top_aria: 'Back to top'
   },
   cookie: {
@@ -837,7 +837,7 @@ en: {
     li_act_v: 'Fotógrafo profesional · jmlfoto', li_dom_v: 'Madrid, España',
     h1_2: '2. Naturaleza del sitio',
     p2_1: 'Este sitio web es un <strong>proyecto personal no oficial</strong> creado por Jose Morales, fotógrafo habitual del grupo Gwendal durante más de una década y autor del próximo libro sobre la historia de la banda.',
-    p2_2: 'Este sitio <strong>no representa al grupo Gwendal</strong>, a sus miembros ni a su management (Actos Management · Marcos Valles). Cualquier referencia al grupo se realiza con fines informativos, culturales y de divulgación musical.',
+    p2_2: 'Este sitio <strong>no representa al grupo Gwendal</strong>, a sus miembros ni a su management (Actos Pro · Alan Valles). Cualquier referencia al grupo se realiza con fines informativos, culturales y de divulgación musical.',
     h1_3: '3. Propiedad intelectual',
     h3_foto: 'Fotografías',
     p3_foto_1: 'Todas las fotografías publicadas en este sitio son propiedad de <strong>© Jose Morales · jmlfoto</strong>, salvo las pertenecientes al archivo histórico del grupo, cuyos derechos corresponden a sus respectivos autores.',
@@ -868,7 +868,7 @@ en: {
     li_act_v: 'Photographe professionnel · jmlfoto', li_dom_v: 'Madrid, Espagne',
     h1_2: '2. Nature du site',
     p2_1: 'Ce site web est un <strong>projet personnel non officiel</strong> créé par Jose Morales, photographe habituel du groupe Gwendal depuis plus d\'une décennie et auteur du prochain livre sur l\'histoire du groupe.',
-    p2_2: 'Ce site <strong>ne représente pas le groupe Gwendal</strong>, ses membres ni son management (Actos Management · Marcos Valles). Toute référence au groupe est faite à des fins informatives, culturelles et de vulgarisation musicale.',
+    p2_2: 'Ce site <strong>ne représente pas le groupe Gwendal</strong>, ses membres ni son management (Actos Pro · Alan Valles). Toute référence au groupe est faite à des fins informatives, culturelles et de vulgarisation musicale.',
     h1_3: '3. Propriété intellectuelle',
     h3_foto: 'Photographies',
     p3_foto_1: 'Toutes les photographies publiées sur ce site sont la propriété de <strong>© Jose Morales · jmlfoto</strong>, à l\'exception de celles appartenant aux archives historiques du groupe, dont les droits appartiennent à leurs auteurs respectifs.',
@@ -899,7 +899,7 @@ en: {
     li_act_v: 'Professional photographer · jmlfoto', li_dom_v: 'Madrid, Spain',
     h1_2: '2. Nature of the site',
     p2_1: 'This website is an <strong>unofficial personal project</strong> created by Jose Morales, the regular photographer of the Gwendal group for over a decade and author of the forthcoming book on the band\'s history.',
-    p2_2: 'This site <strong>does not represent the Gwendal group</strong>, its members or its management (Actos Management · Marcos Valles). Any reference to the group is made for informational, cultural and music promotion purposes.',
+    p2_2: 'This site <strong>does not represent the Gwendal group</strong>, its members or its management (Actos Pro · Alan Valles). Any reference to the group is made for informational, cultural and music promotion purposes.',
     h1_3: '3. Intellectual property',
     h3_foto: 'Photographs',
     p3_foto_1: 'All photographs published on this site are the property of <strong>© Jose Morales · jmlfoto</strong>, except those belonging to the group\'s historical archive, whose rights belong to their respective authors.',
