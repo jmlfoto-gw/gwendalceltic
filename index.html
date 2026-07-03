@@ -166,6 +166,7 @@
         <li><a href="#galeria" class="nav-link" data-i18n="nav.galeria">Galería</a></li>
         <li><a href="#libro" class="nav-link" data-i18n="nav.libro">El Libro</a></li>
         <li><a href="#timeline" class="nav-link" data-i18n="nav.cronologia">Cronología</a></li>
+        <li><a href="#conciertos" class="nav-link" data-i18n="nav.conciertos">Conciertos</a></li>
         <li><a href="#noticias" class="nav-link" data-i18n="nav.noticias">Noticias</a></li>
         <li><a href="#contacto" class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
         <li><a href="#libro" class="nav-cta" data-i18n="nav.reservar">Reservar Libro</a></li>
@@ -1253,6 +1254,58 @@
     </section>
 
     <!-- ============================================================
+         CONCIERTOS — Próximas fechas
+         Mientras no haya fechas confirmadas se muestra el estado
+         vacío (.conciertos-empty). En cuanto Jose tenga fechas
+         reales, sustituir ese bloque por artículos .concierto
+         (ver plantilla comentada más abajo) y, si se desea, añadir
+         cada fecha como MusicEvent en el JSON-LD (@graph) del head.
+    ============================================================ -->
+    <section class="section conciertos" id="conciertos" aria-labelledby="conc-title">
+      <div class="section-container">
+
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="conc.tag">Agenda</span>
+          <h2 class="section-title" id="conc-title" data-i18n-html="conc.title">Próximos <em>Conciertos</em></h2>
+          <div class="section-ornament" aria-hidden="true">⸻</div>
+        </div>
+
+        <!--
+          PLANTILLA — copiar este <article> dentro de .conciertos-grid
+          por cada fecha confirmada y eliminar .conciertos-empty:
+
+          <div class="conciertos-grid">
+            <article class="concierto reveal">
+              <div class="concierto-fecha">
+                <span class="concierto-dia">14</span>
+                <span class="concierto-mes">Jun</span>
+                <span class="concierto-anio">2027</span>
+              </div>
+              <div class="concierto-info">
+                <span class="concierto-status concierto-status--disponible" data-i18n="conc.status_disp">Entradas disponibles</span>
+                <h3 class="concierto-ciudad">Madrid, España</h3>
+                <p class="concierto-recinto">Teatro Circo Price</p>
+              </div>
+              <a href="https://ENLACE-DE-ENTRADAS" class="btn btn-secondary concierto-cta" target="_blank" rel="noopener noreferrer" data-i18n="conc.cta_entradas">Comprar entradas</a>
+            </article>
+          </div>
+
+          Estados disponibles para concierto-status:
+          concierto-status--disponible (conc.status_disp)
+          concierto-status--agotado    (conc.status_agot)
+          concierto-status--proximo    (conc.status_prox)
+        -->
+
+        <div class="conciertos-empty reveal">
+          <div class="conciertos-empty-icon" aria-hidden="true">♪</div>
+          <p class="conciertos-empty-text" data-i18n="conc.empty_text">Ahora mismo no hay fechas confirmadas. Síguenos en redes o suscríbete para ser el primero en enterarte en cuanto se anuncie la próxima gira.</p>
+          <a href="#contacto" class="btn btn-secondary" data-i18n="conc.empty_cta">Recibir avisos de conciertos</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
          TESTIMONIOS extractados de prensa y entrevistas
     ============================================================ -->
     <section class="section testimonios" id="testimonios" aria-labelledby="test-title">
@@ -1284,7 +1337,7 @@
 
           <blockquote class="testimonio reveal" cite="https://elpais.com/diario/1992/06/01/cultura/707349610_850215.html">
             <div class="testimonio-quote" aria-hidden="true">❝</div>
-            <p>17.000 personas y siete horas de fiesta. Gwendal cerró el Primer Festival de Música Celta de Madrid con su estilo intacto: rock celta mezclado con improvisaciones jazzísticas.</p>
+            <p>17.000 personas y siete horas de fiesta. Gwendal cerró el I Festival de Música Celta de Madrid con su estilo intacto: rock celta mezclado con improvisaciones jazzísticas.</p>
             <footer>
               — <a href="https://elpais.com/diario/1992/06/01/cultura/707349610_850215.html" target="_blank" rel="noopener noreferrer">Ignacio Sáenz de Tejada, El País · 1 de junio de 1992</a>
             </footer>
@@ -1565,6 +1618,7 @@
         <a href="#galeria" data-i18n="footer.nav_gal">Galería</a>
         <a href="#libro" data-i18n="footer.nav_libro">El Libro</a>
         <a href="#timeline" data-i18n="footer.nav_tl">Cronología</a>
+        <a href="#conciertos" data-i18n="footer.nav_conc">Conciertos</a>
         <a href="#contacto" data-i18n="footer.nav_cont">Contacto</a>
       </nav>
 

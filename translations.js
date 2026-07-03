@@ -18,6 +18,7 @@ es: {
     galeria:    'Galería',
     libro:      'El Libro',
     cronologia: 'Cronología',
+    conciertos: 'Conciertos',
     noticias:   'Noticias',
     contacto:   'Contacto',
     reservar:   'Reservar Libro',
@@ -184,6 +185,16 @@ es: {
     y2026_title: 'El Libro',
     y2026_p:     'Se empieza a fraguar la idea de la edición de un libro conmemorativo. Más de cincuenta años de historia en imágenes y recuerdos. El testimonio visual definitivo de una de las bandas más importantes de la música celta europea.'
   },
+  conc: {
+    tag:         'Agenda',
+    title:       'Próximos <em>Conciertos</em>',
+    empty_text:  'Ahora mismo no hay fechas confirmadas. Síguenos en redes o suscríbete para ser el primero en enterarte en cuanto se anuncie la próxima gira.',
+    empty_cta:   'Recibir avisos de conciertos',
+    status_disp: 'Entradas disponibles',
+    status_agot: 'Entradas agotadas',
+    status_prox: 'Próximamente',
+    cta_entradas:'Comprar entradas'
+  },
   test: {
     tag:        'Voces',
     title:      'Lo que dicen',
@@ -247,6 +258,7 @@ es: {
     nav_gal:    'Galería',
     nav_libro:  'El Libro',
     nav_tl:     'Cronología',
+    nav_conc:   'Conciertos',
     nav_cont:   'Contacto',
     privacidad: 'Política de privacidad',
     aviso:      'Aviso legal',
@@ -284,6 +296,7 @@ fr: {
     galeria:    'Galerie',
     libro:      'Le Livre',
     cronologia: 'Chronologie',
+    conciertos: 'Concerts',
     noticias:   'Actualités',
     contacto:   'Contact',
     reservar:   'Réserver le Livre',
@@ -450,6 +463,16 @@ fr: {
     y2026_title: 'Le Livre',
     y2026_p:     "L'idée d'un livre commémoratif commence à prendre forme. Plus de cinquante ans d'histoire en images et en souvenirs. Le témoignage visuel définitif de l'un des groupes les plus importants de la musique celtique européenne."
   },
+  conc: {
+    tag:         'Agenda',
+    title:       'Prochains <em>Concerts</em>',
+    empty_text:  "Aucune date n'est confirmée pour le moment. Suivez-nous sur les réseaux ou inscrivez-vous pour être informé dès l'annonce de la prochaine tournée.",
+    empty_cta:   'Recevoir les alertes concerts',
+    status_disp: 'Billets disponibles',
+    status_agot: 'Complet',
+    status_prox: 'Bientôt',
+    cta_entradas:'Acheter des billets'
+  },
   test: {
     tag:        'Témoignages',
     title:      'Ce qu\'ils disent',
@@ -513,6 +536,7 @@ fr: {
     nav_gal:    'Galerie',
     nav_libro:  'Le Livre',
     nav_tl:     'Chronologie',
+    nav_conc:   'Concerts',
     nav_cont:   'Contact',
     privacidad: 'Politique de confidentialité',
     aviso:      'Mentions légales',
@@ -550,6 +574,7 @@ en: {
     galeria:    'Gallery',
     libro:      'The Book',
     cronologia: 'Timeline',
+    conciertos: 'Concerts',
     noticias:   'News',
     contacto:   'Contact',
     reservar:   'Pre-order the Book',
@@ -716,6 +741,16 @@ en: {
     y2026_title: 'The Book',
     y2026_p:     'The idea of a commemorative book begins to take shape. More than fifty years of history in images and memories. The definitive visual record of one of the most important bands in European Celtic music.'
   },
+  conc: {
+    tag:         'Agenda',
+    title:       'Upcoming <em>Concerts</em>',
+    empty_text:  'There are no confirmed dates right now. Follow us on social media or sign up to be the first to know as soon as the next tour is announced.',
+    empty_cta:   'Get concert alerts',
+    status_disp: 'Tickets available',
+    status_agot: 'Sold out',
+    status_prox: 'Coming soon',
+    cta_entradas:'Buy tickets'
+  },
   test: {
     tag:        'Voices',
     title:      'What they say',
@@ -779,6 +814,7 @@ en: {
     nav_gal:    'Gallery',
     nav_libro:  'The Book',
     nav_tl:     'Timeline',
+    nav_conc:   'Concerts',
     nav_cont:   'Contact',
     privacidad: 'Privacy policy',
     aviso:      'Legal notice',

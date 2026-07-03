@@ -1777,6 +1777,117 @@ textarea {
   margin: 0;
 }
 
+/* ─── CONCIERTOS ────────────────────────────────────────────── */
+.conciertos {
+  background: var(--c-dark-2);
+}
+
+.conciertos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.concierto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--c-dark-3);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: var(--r-md);
+  padding: 1.75rem;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.concierto:hover {
+  border-color: rgba(201,168,76,0.4);
+  transform: translateY(-4px);
+}
+
+.concierto-fecha {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.concierto-dia {
+  font-family: var(--f-title);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--c-gold);
+  line-height: 1;
+}
+
+.concierto-mes {
+  font-size: 0.95rem;
+  color: var(--c-gold-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.concierto-anio {
+  font-size: 0.85rem;
+  color: var(--c-grey);
+}
+
+.concierto-status {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--c-gold-light);
+  width: fit-content;
+}
+
+.concierto-status--agotado {
+  border-color: rgba(138,136,128,0.4);
+  color: var(--c-grey);
+}
+
+.concierto-ciudad {
+  font-size: 1.15rem;
+  color: var(--c-white);
+  margin: 0.5rem 0 0.15rem;
+}
+
+.concierto-recinto {
+  font-size: 0.9rem;
+  color: var(--c-grey-light);
+  margin: 0;
+}
+
+.concierto-cta {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.conciertos-empty {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border: 1px dashed rgba(201,168,76,0.3);
+  border-radius: var(--r-md);
+}
+
+.conciertos-empty-icon {
+  font-size: 1.8rem;
+  color: var(--c-gold);
+  margin-bottom: 1rem;
+}
+
+.conciertos-empty-text {
+  font-size: 1rem;
+  color: var(--c-grey-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
 /* ─── TESTIMONIOS ───────────────────────────────────────────── */
 .testimonios {
   background: var(--c-dark);
@@ -2352,6 +2463,7 @@ textarea {
 
   /* Noticias */
   .noticias-grid { grid-template-columns: 1fr; }
+  .conciertos-grid { grid-template-columns: 1fr; }
 
   /* Hitos */
   .sobre-hitos { grid-template-columns: 1fr; }
