@@ -194,6 +194,9 @@ es: {
     status_agot: 'Entradas agotadas',
     status_prox: 'Próximamente',
     cta_entradas:'Comprar entradas'
+    status_conf: 'Fecha confirmada · Entrada libre',
+    desc_alcala: 'Gwendal vuelve a Alcalá de Henares.',
+    cta_info:    'Más información'
   },
   test: {
     tag:        'Voces',
@@ -472,6 +475,9 @@ fr: {
     status_agot: 'Complet',
     status_prox: 'Bientôt',
     cta_entradas:'Acheter des billets'
+    status_conf: 'Date confirmée · Entrée libre',
+    desc_alcala: 'Gwendal revient à Alcalá de Henares.',
+    cta_info:    'Plus d\'informations' 
   },
   test: {
     tag:        'Témoignages',
@@ -750,6 +756,9 @@ en: {
     status_agot: 'Sold out',
     status_prox: 'Coming soon',
     cta_entradas:'Buy tickets'
+    status_conf: 'Date confirmed · Free entry',
+    desc_alcala: 'Gwendal returns to Alcalá de Henares.',
+    cta_info:    'More information'
   },
   test: {
     tag:        'Voices',

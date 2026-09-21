@@ -1888,6 +1888,14 @@ textarea {
   margin-bottom: 1.5rem;
 }
 
+.concierto-desc {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-crudo-suave, #d8d4c8); /* ajusta al nombre real de tu variable */
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
 /* ─── TESTIMONIOS ───────────────────────────────────────────── */
 .testimonios {
   background: var(--c-dark);
